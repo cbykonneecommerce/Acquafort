@@ -1,0 +1,374 @@
+.section-title span, .destaques-display span {
+    color: #38B7F8;
+}
+
+#nav-grid, #bottomrow{
+    text-align: center;
+}
+
+#underbanners .col-sm-8{
+    margin-left: -28px;
+}
+#underbanners .col-sm-8 h5{
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+#carouselpropostas .item .col-xs-6 img{
+    width: 34%;
+}
+
+#carouselpropostas .item .col-xs-6 h5{
+    font-weight: bold;
+
+}
+
+#carouselpropostas .owl-item {
+    margin-left: 1.5em;
+
+}
+#propostas {
+    background-color: #DEE3E6;
+    color: #444444;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+.section-title img {
+    margin-bottom: 7px;
+    margin-right: 6px;
+}
+
+.content {
+    padding: 1.3em;
+}
+
+.content a span {
+    color: #15363D;
+}
+.depto-nav #bottomrow {
+    border-style: solid;
+    border-color: #C8C8C8;
+    border-width: thin;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.destaqueslist {
+    border-color: #DDDDDD;
+    text-align: center;
+    border-style: solid;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-width: thin;
+    padding-bottom: 1em;
+}
+
+.destaqueslist li span {
+    color: #333;
+}
+
+.destaqueslist > li {
+    margin-left: 5em;
+}
+
+.destaqueslist li span:hover , #dropdownMenu1{
+    color: #38B7F8;
+    font-weight: bold;
+}
+
+#dropdownMenu1 {
+    font-size: 1em;
+}
+#dropdownMenu1 i {
+    color: #828282;
+    border-color: #808080;
+    border-style: solid;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-width: thin;
+    padding-left: 0.8em;
+    margin-left: 0.8em;
+}
+
+
+
+.colection-description-box {
+    background-color: #5062C2;
+    margin-top: -0.8em;
+    padding-top: 1.5em;
+    padding-left: 1.6em;
+    border-radius: 0px 0px 10px 10px;
+    height: 8em;
+}
+
+.colection-description-box h5, .colection-description-box h3 {
+    color: white;
+} 
+
+.colection-description-box h3 {
+    font-weight: bold;
+}
+.big-box img {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.mini-box {
+    border-style: solid;
+    border-color: #C8C8C8;
+    border-width: thin;
+    border-radius: 10px;
+}
+
+#colection-dropdown {
+    left: 11em;
+    width: 22em;
+    padding-top: 1em;
+    padding-left: 1em;
+    font-size: 1em;
+}
+.select-triangle, .destaques-shelf, .colection-item  {
+    display: none;
+}
+.destaqueslist li span:hover + .select-triangle {
+    display: block !important;
+}
+
+.owl-pagination {
+    display: none;
+}
+
+
+.select-triangle {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #38B7F8;
+    margin-left: 45%;
+    margin-bottom: -1em;
+    margin-top: 0.7em;
+}
+
+.depto-nav #nav-grid{
+    border-style: solid;
+    border-color: #C8C8C8;
+    border-bottom-color: transparent;
+    border-width: thin;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.depto-nav .col-sm-2 {
+    border-style: solid;
+    border-color: #C8C8C8;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-width: thin;
+}
+
+.grid-ending {
+    border-right-color: transparent;
+}
+.grid-start {
+    border-left-color: transparent !important;
+}
+
+
+#carouselmarcas .item {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+
+}
+
+.box-text img {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-top: -5em;
+    border-radius: 10px;
+    width: 43%;
+}
+
+.box-text p {
+    color: #000;
+    padding-top: 1.3em;
+    font-size: 1.2em;
+    padding-bottom: 1em;
+}
+
+.destaques-display .row{
+    margin-bottom: 1em;
+}
+
+.section-title {
+    margin-bottom: 2em;
+}
+
+.marca-nav, .destaques-display, #colecoes, #preco-baixo {
+    margin-top: 2em;
+}
+#carouselmarcas .owl-controls .owl-buttons > div.owl-prev {
+    margin-left: -7em;
+}
+#carouselmarcas .owl-controls .owl-buttons > div.owl-next {
+    margin-right: -7em;
+}
+
+#depoimentos {
+    background-image: url(/arquivos/depoimentosbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    margin-bottom: 3em;
+    margin-top: 5em;
+    height: 330px;
+}
+
+#carousel-depoimentos {
+    margin-bottom: 1em;
+}
+#depoimentos h3 {
+    margin-top: 2em;
+    font-weight: bold;
+}
+#depoimentos p {
+    margin-bottom: 4em;
+}
+#newsletter {
+    background-color: #8BCEE6;
+    color: #00506D;
+    height: 187px;
+    padding-top: 4em;
+
+}
+
+#newsletter h4 {
+    font-weight: bold;
+}
+
+#newsform #emailform {
+    background-color: #8BCEE6;
+    border-bottom-color: #00506D;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-radius: 0px;
+    width: 25em;
+    outline-style: none;
+    box-shadow: none;
+}
+
+
+#newsform #emailform::placeholder{
+    color: rgb(0, 80, 109);
+  }
+#newsform #commit {
+    margin-left: 3em;
+    border-radius: 40px;
+    background-color: #00506D;
+    border-color: #00506D;
+    color: #8BCEE6;
+    font-weight: bold;
+    /*height: 64px;
+    width: 264px;*/
+    height: 2.7em;
+    width: 11.2em;
+    font-size: 27px;
+    outline-style: none;
+    box-shadow: none;
+}
+
+
+#newstext h4 {
+    /*font-size: 54px;*/
+    font-size: 3em;
+}
+#newstext small {
+    /*font-size: 27px;*/
+    font-size: 1.5em;
+
+}
+
+@media screen and (max-width: 1450px) {
+
+    #carouselmarcas .owl-controls .owl-buttons > div.owl-prev {
+        margin-left: -4em;
+    }
+    #carouselmarcas .owl-controls .owl-buttons > div.owl-next {
+        margin-right: -4em;
+    }
+    
+    #newstext {
+        margin-left: 9em;
+    }
+    #newstext h4 {
+        /*font-size: 54px;*/
+        font-size: 2em;
+    }
+    #newstext small {
+        font-size: 0.9em;
+    }
+    #newsform {
+        margin-left: 1em;
+    }
+
+    #newsform #emailform {
+        width: 19em;
+    }
+
+    #newsform #commit {
+        height: 1.7em;
+        width: 9.2em;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+
+
+    .section-title img {
+        margin-bottom: 0px;
+        margin-right: 6px;
+    }
+    #colection-dropdown {
+        left: 1%;
+        width: 100%;
+    }
+
+    #colection-dropdown li{
+        padding-top: 7%;
+    }
+    #newsletter {
+        height: 265px;
+    }
+    #newstext {
+        margin-left: 0;
+    text-align: center;
+    }
+    #newsform {
+        margin-left: 1em;
+    }
+
+    #newsform #emailform {
+        margin-top: 1em;
+        width: 25em;
+    }
+
+    #newsform #commit {
+        margin-left: 2em;
+        margin-top: 1em;
+    }
+
+.colection-description-box {
+    margin-bottom: 3em
+}
+#carouselmarcas .owl-next, #carouselmarcas .owl-prev {
+    display: none;
+}
+    .destaqueslist li{
+        display: block;
+        margin-top: 2em;
+        padding-right: 6em;
+    }
+      }

@@ -1,0 +1,108 @@
+.fulltext-search-box{
+    color: #8695ac !important;
+   /* border-radius: 20px !important;*/
+    outline-style:none;
+    box-shadow:none;
+    border-right: transparent !important;
+    border-radius: 40px !important;
+    font-size: 1.4em;
+    height: 3.5em;
+    border: none !important;
+
+}
+
+
+.header .search .busca {
+    border: 1px solid #ccc;
+    
+    border-radius: 40px;
+}
+.icon-dropdown button img {
+    height: 43px;
+    width: 43px;
+    /*    max-width: 43px; comecar a fazer assim */
+    
+}
+
+
+#ajuda {
+    background-color: #5062C2;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    margin: 1em
+}
+
+#atendimento {
+    background-color: white;
+    border-radius: 30px;
+    color: #5062C2;
+    margin: 1em;
+    border: 1px solid #5062C2;
+}
+
+.numeros {
+    margin-bottom: 1em;
+}
+.numeros i{
+    margin-left: -1em;
+    margin-right: 0.8em;
+    font-size: large;
+}
+.header-container {
+    position: sticky;
+    top: 0px;
+    z-index: 10000000;
+    background-color: white;
+    padding-top: 0.6em;
+}
+/*logo agora é 350 width*/
+.btn-orders, .btn-login {
+    border: none;
+    box-shadow: none;
+    background-color: white !important;
+}
+
+
+
+.btn-buscar {
+    background-image: url(/arquivos/lupa.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: contain;
+    background-position: center center;
+    color: transparent !important;
+    outline-style:none;
+    box-shadow:none;
+    border: none !important;
+    background-color: white !important;
+   /* border-radius: 0px 40px 40px 0px !important*/;
+   border-left: 2px solid #808080 !important;
+    border-radius: 0 !important;
+   
+}
+
+
+.btn-mini-cart{
+    border-color: transparent;
+}
+
+#mini-cart-admake .mini-cart-botao .btn-finalizar-compra {
+    background-color: #5062C2 !important;
+}
+
+#mobile-cart, #desktop-cart{
+    border-color: transparent !important;
+    outline-style:none;
+    box-shadow:none;
+}
+
+
+@media screen and (max-width: 450px) {
+    .header .search .btn-buscar {
+        border-radius: 26px;
+    }
+    #propostas {
+        padding-bottom: 0em;
+        padding-top: 0em;
+    }
+}

@@ -1,0 +1,50 @@
+.footer {
+    background-color: white !important;
+}
+
+
+.copy-right.text-center {
+    background-color: #1B4274;
+    padding-top: 61px;
+
+}
+
+.copy-right p {
+    color: white !important;
+}
+
+.social-media {
+    width: 2.5em;
+}
+
+.social-icons li {
+    padding: 0.7em;
+    border-radius: 100%;
+    background-color: #09264A;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#copyright-footer {
+    font-size: 14px; 
+}
+
+.img-responsive-acqua {
+    margin-left: 7em;
+}
+
+.social-icons {
+    margin-left: 4.34em;
+}
+
+@media screen and (max-width: 450px) {
+
+    .img-responsive-acqua {
+        margin-left: 0em;
+        margin-bottom: 2em;
+    }
+
+    .social-icons {
+        margin-left: 0em;
+    }
+}

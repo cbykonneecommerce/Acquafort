@@ -1,0 +1,69 @@
+<!-- 
+ *
+ * Desenvolvido por Integrando.se
+ * hello@integrando.se
+ * 
+ * Bootstrap v.3
+ *
+ -->
+
+ <!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+ 
+ <head>
+     <title> Quem Somos</title>
+     <vtex:metaTags/>
+     <vtex:template id="commonStyles" />
+     <link rel="stylesheet" href="/arquivos/institucional.css" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+ </head>
+ 
+ <body id="institucional-page">
+ 
+     <div class="page">
+ 
+         <!--  SubTemplate: Header -->
+         <vtex:template id="Header" />
+         <!-- /SubTemplate: Header -->
+                     
+         <div id="institucional-extra-top"></div>                    
+ 
+         <section id="institucional-content" class="container">
+ 
+             <div id="box-bread-brumb" class="hidden-xs">
+                
+             </div>
+ 
+             <div id="institucional-extra-middle" style="text-align:center">
+               
+             </div>
+ 
+             
+ 
+             <div class="conteudo-institucional">
+                <!-- <vtex:contentPlaceHolder id="quem-somos" /> -->
+                <div class="row" >
+                    <div class="col-sm-6" >
+                        <vtex:contentPlaceHolder id="imagem" />
+                       </div>
+                       <div class="col-sm-6" id="sobrenos">
+                            <h2 class="titulo-institucional"><vtex:contentPlaceHolder id="titulo" /></h2>
+                        <vtex:contentPlaceHolder id="texto" />
+                       </div>
+                </div>
+             </div>
+ 
+         </section><!-- #content -->  
+         
+         <div id="institucional-extra-bottom"></div>
+                 
+         <!--  SubTemplate: Footer -->
+         <vtex:template id="Footer" />
+         <!-- /SubTemplate: Footer -->
+     
+     </div><!-- .container-fluid -->
+ 
+ </body>
+     <vtex:template id="commonScripts" />
+ </html>

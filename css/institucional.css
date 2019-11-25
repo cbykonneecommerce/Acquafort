@@ -1,0 +1,20 @@
+.titulo-institucional {
+    font-weight: bold;
+    color: #2F6CA7;
+    font-size: 2.2em;
+    border-bottom: none;
+}
+
+#content-info{
+    color: #000
+}
+
+
+#content-info h4{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#content-info p{
+    margin-bottom: 3em;
+}
