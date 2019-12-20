@@ -260,58 +260,75 @@
 
 
 
-    <div class="menu-departamento">
+    <div class="menu-departamento" style="display:block!important">
 
       <div class="row">
         <ul class="nav navbar-nav" id="storenav">
 
-          <li class="depto-rouparia">
-            <a class="menu-item-texto" href="/rouparia">ROUPARIA</a>
+          <li class="depto-todas">
+            <a class="menu-item-texto"  style="font-weight: bold">Todas as Categorias<i class="fa fa-angle-down"></i></a>
 
           </li>
 
-          <li class="depto-tableware">
-            <a class="menu-item-texto" href="/tableware">TABLEWARE</a>
+          <li class="depto-aquecedores">
+            <a class="menu-item-texto" href="/tableware">Aquecedores</a>
 
           </li>
 
-          <li class="depto-decor">
-            <a class="menu-item-texto" href="/decor">DÉCOR</a>
+          <li class="depto-iluminacao">
+            <a class="menu-item-texto" href="/decor">Iluminação</a>
 
           </li>
-          <li class="depto-marcas">
-            <a class="menu-item-texto" href="/catalogomarcas">MARCAS</a>
+          <li class="depto-eletrico">
+            <a class="menu-item-texto" href="/catalogomarcas">Material Elétrico</a>
+
+          </li>
+          <li class="depto-material">
+            <a class="menu-item-texto" href="/catalogomarcas">Material Hidráulico</a>
+
+          </li>
+          <li class="depto-prevencao">
+            <a class="menu-item-texto" href="/catalogomarcas">Prevenção contra incêndio</a>
 
           </li>
 
+          <li class="depto-orcamento">
+            <a class="menu-item-texto" href="/catalogomarcas" id="orcamento-btn">Orçamento</a>
 
+          </li>
         </ul>
 
       </div>
 
       <div class="row">
 
-        <div class="deptonav depto-rouparia" id="rouparia" style="display: none">
+        <div class="deptonav depto-todas" id="todas" style="display: none">
           <div class="row">
-            <div class="col-sm-3">
-              <ul class=""> </ul>
+            <div class="col-sm-4">
+              <ul class=""> 
+                <li class="depto-aquecedores"><a href="#" >Aquecedores<i class="fa fa-angle-right"></i></a></li>
+                <li class="depto-casa"><a href="#" >Casa e Jardim<i class="fa fa-angle-right"></i></a></li>
+                <li class="depto-chuveiro"><a href="#" >Chuveiro e Duchas<i class="fa fa-angle-right"></i></a></li>
+                <li class="depto-ferramentas"><a href="#" >Ferramentas<i class="fa fa-angle-right"></i></a></li>
+                <li class="depto-iluminacao"><a href="#" >Iluminação<i class="fa fa-angle-right"></i></a></li>
+                <li class="depto-loucas"><a href="#" >Louças e Metais<i class="fa fa-angle-right"></i></a></li>
+                <li class="depto-material"><a href="#" >Material Hidráulico<i class="fa fa-angle-right"></i></a></li>
+                <li class="depto-medidores"><a href="#" >Medidores e Reguladores<i class="fa fa-angle-right"></i></a></li>
+                <li class="depto-placas"><a href="#" >Placas de Sinalização<i class="fa fa-angle-right"></i></a></li>
+                <li class="depto-prevencao"><a href="#" >Prevenção Contra Incêndio<i class="fa fa-angle-right"></i></a></li>
+                <li class="depto-tintas"><a href="#" >Tintas e Acessorios<i class="fa fa-angle-right"></i></a></li>
+                <li class="depto-ventiladores"><a href="#">Ventiladores<i class="fa fa-angle-right"></i></a></li>
+                
+              </ul>
             </div>
-            <div class="col-sm-3">
-
-            </div>
-            <div class="col-sm-3">
-
-            </div>
-            <div class="col-sm-3">
-              <a><img src="/arquivos/carrossel.jpg" /></a>
-            </div>
+            
           </div>
 
         </div>
 
-        <div class="deptonav depto-tableware" id="tableware" style="display: none">
+        <div class="deptonav depto-aquecedores" id="aquecedores" style="display: none">
           <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-3" style="border-right: solid 2px #C8C8C8">
               <ul class="">
                 <li><a href="/tableware/bandejas">Bandejas</a></li>
                 <li><a href="/tableware/prataria">Prataria</a></li>
@@ -319,18 +336,20 @@
               </ul>
             </div>
             <div class="col-sm-3">
-
+              <ul class="">
+                <li><a href="/tableware/bandejas">Bandejas</a></li>
+                <li><a href="/tableware/prataria">Prataria</a></li>
+                <li><a href="/tableware/aparelhos-de-jantar">Aparelhos de Jantar</a></li>
+              </ul>
             </div>
-            <div class="col-sm-3">
-
-            </div>
-            <div class="col-sm-3">
-              <a><img src="/arquivos/carrossel.jpg" /></a>
+            
+            <div class="col-sm-5">
+              <a><img src="/arquivos/img-header.png" /></a>
             </div>
           </div>
 
         </div>
-        <div class="deptonav depto-decor" id="decor" style="display: none">
+        <div class="deptonav depto-iluminacao" id="iluminacao" style="display: none">
           <div class="row">
             <div class="col-sm-3">
               <ul class="">
@@ -339,19 +358,20 @@
               </ul>
             </div>
             <div class="col-sm-3">
-
+              <ul class="">
+                <li><a href="/decor/abajures-e-luminarias">Abajures e Luminárias</a></li>
+                <li><a href="/decor/almofadas">Almofadas</a></li>
+              </ul>
             </div>
-            <div class="col-sm-3">
-
-            </div>
-            <div class="col-sm-3">
-              <a href="#"><img src="/arquivos/menu_decor.jpg" /></a>
+            
+            <div class="col-sm-5">
+              <a href="#"><img src="/arquivos/img-header.png" /></a>
             </div>
           </div>
 
         </div>
 
-        <div class="deptonav depto-marcas" id="marcas" style="display: none">
+        <div class="deptonav depto-eletrico" id="eletrico" style="display: none">
           <div class="row">
             <div class="col-sm-3">
               <ul>
@@ -376,8 +396,8 @@
             <div class="col-sm-3">
 
             </div>
-            <div class="col-sm-3">
-              <a><img src="/arquivos/menu_marcas.jpg" /></a>
+            <div class="col-sm-5">
+              <a><img src="/arquivos/img-header.png" /></a>
             </div>
           </div>
 
