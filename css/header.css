@@ -108,7 +108,7 @@ font-family: Arial !important;
 }
 
 .icon-dropdown button img {
-    height: 43px;
+    height: auto;
     width: 43px;
     /*    max-width: 43px; comecar a fazer assim */
 }
@@ -203,8 +203,15 @@ font-family: Arial !important;
     .header .search .btn-buscar {
         border-radius: 26px;
     }
+
+    .header .container-fluid {
+        padding-right: 15px !important;
+    padding-left: 15px !important;
+    }
     #propostas {
         padding-bottom: 0em;
         padding-top: 0em;
     }
+
+
 }

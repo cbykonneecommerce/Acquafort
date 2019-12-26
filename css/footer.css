@@ -44,6 +44,8 @@
     color: #00506D;
     height: 187px;
     padding-top: 4em;
+    margin-right: 0;
+    margin-left: 0;
 
 }
 
@@ -94,6 +96,34 @@
 
 }
 
+@media screen and (max-width: 1450px) {
+
+    
+    #newstext {
+        margin-left: 9em;
+    }
+    #newstext h4 {
+        /*font-size: 54px;*/
+        font-size: 2em;
+    }
+    #newstext small {
+        font-size: 0.9em;
+    }
+    #newsform {
+        margin-left: 1em;
+        text-align: center;
+    }
+
+    #newsform #emailform {
+        width: 19em;
+    }
+
+    #newsform #commit {
+        height: 1.7em;
+        width: 9.2em;
+    }
+  }
+
 @media screen and (max-width: 450px) {
 
     .img-responsive-acqua {
@@ -114,6 +144,7 @@
     }
     #newsform {
         margin-left: 1em;
+        text-align: center;
     }
 
     #newsform #emailform {
@@ -122,38 +153,13 @@
     }
 
     #newsform #commit {
-        margin-left: 2em;
+        margin-left: 0em;
         margin-top: 1em;
     }
 }
 
 
 
-@media screen and (max-width: 1450px) {
 
-    
-    #newstext {
-        margin-left: 9em;
-    }
-    #newstext h4 {
-        /*font-size: 54px;*/
-        font-size: 2em;
-    }
-    #newstext small {
-        font-size: 0.9em;
-    }
-    #newsform {
-        margin-left: 1em;
-    }
-
-    #newsform #emailform {
-        width: 19em;
-    }
-
-    #newsform #commit {
-        height: 1.7em;
-        width: 9.2em;
-    }
-  }
 
   
