@@ -7,710 +7,721 @@
  *
  -->
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
-    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
-
-<head>
-    <title> Modelo Vtex</title>
-    <vtex:metaTags />
-    <vtex:template id="commonStyles" />
-    <link href="/arquivos/home.css" rel="stylesheet" type="text/css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-</head>
-
-<body id="home-page">
-
-    <div class="page">
-
-        <!--  SubTemplate: Header -->
-        <vtex:template id="Header" />
-        <!-- /SubTemplate: Header -->
-
-        <div id="home-extra-top"></div>
-        <section class="container-fluid" style="padding-right: 0px;
-        padding-left: 0px;">
-            <div class="fullbanner">
-                <vtex:contentPlaceHolder id="bannersegmentado" />
-            </div><!-- .fullbanner -->
-            <section  id="propostas">
-                    <div class="container">
-                            <div class="row hidden-xs" id="underbanners">
-                                    <div class="col-sm-2">
-                                        <div class="col-sm-6">
-                                            <img src="/arquivos/Politica_-_15_OFF.png" />
-                                        </div>
-                                        <div class="col-sm-8" >
-                                            <h5>15% OFF</h5>
-                                            <small>no boleto bancário</small>
-                                        </div>
-                    
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <div class="col-sm-6">
-                                            <img src="/arquivos/Politica_-_6x_sem_Juros.png" />
-                                        </div>
-                                        <div class="col-sm-8" >
-                                            <h5>6X SEM JUROS</h5>
-                                            <small>em todo site</small>
-                                        </div>
-                    
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <div class="col-sm-6">
-                                            <img src="/arquivos/Politica_-_Retire_na_Loja.png" />
-                                        </div>
-                    
-                    
-                                        <div class="col-sm-8" >
-                                            <h5>RETIRE NA LOJA</h5>
-                                            <small>compre pelo site</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <div class="col-sm-6">
-                                            <img src="/arquivos/Politica_-_Duvidas.png" />
-                                        </div>
-                    
-                    
-                                        <div class="col-sm-8" >
-                                            <h5>WHATSAPP</h5>
-                                            <small>tire suas dúvidas</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <div class="col-sm-6">
-                                            <img src="/arquivos/Politica_-_Acompanhe.png" />
-                                        </div>
-                    
-                    
-                                        <div class="col-sm-8" >
-                                            <h5>ACOMPANHE</h5>
-                                            <small>o seu pedido</small>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <div class="col-sm-6">
-                                            <img src="/arquivos/Politica_-_Solicite_um_Orcamento.png" />
-                                        </div>
-                    
-                    
-                                        <div class="col-sm-8" >
-                                            <h5>SOLICITE</h5>
-                                            <small>um orçamento</small>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            <div class="row visible-xs" id="underbannersMobile">
-                                <div class="col-sm-12">
-                                        <div class="owl-carousel owl-theme" id="carouselpropostas"
-                                        style="margin-top: 1em;margin-bottom: 2em;">
-                                        <div class="item">
-                                                <div class="col-xs-6">
-                                                        <img src="/arquivos/Politica_-_15_OFF.png" />
-                                                    </div>
-                                                    <div class="col-xs-6" style="margin-left: -9em;">
-                                                        <h5>15% OFF</h5>
-                                                        <small>no boleto bancário</small>
-                                                    </div>
-                                        </div>
-                                        <div class="item">
-                                                <div class="col-xs-6">
-                                                        <img src="/arquivos/Politica_-_6x_sem_Juros.png" />
-                                                    </div>
-                                                    <div class="col-xs-6" style="margin-left: -9em;">
-                                                        <h5>6X SEM JUROS</h5>
-                                                        <small>em todo site</small>
-                                                    </div>
-                                        </div>
-                                        <div class="item">
-                                                <div class="col-xs-6">
-                                                        <img src="/arquivos/Politica_-_Retire_na_Loja.png" />
-                                                    </div>
-                                                    <div class="col-xs-6" style="margin-left: -9em;">
-                                                        <h5>RETIRE NA LOJA</h5>
-                                                        <small>compre pelo site</small>
-                                                    </div>
-                                        </div>
-                                        <div class="item">
-                                                <div class="col-xs-6">
-                                                        <img src="/arquivos/Politica_-_Duvidas.png" />
-                                                    </div>
-                                                    <div class="col-xs-6" style="margin-left: -9em;">
-                                                        <h5>WHATSAPP</h5>
-                                                        <small>tire suas duvidas</small>
-                                                    </div>
-                                        </div>
-                                        <div class="item">
-                                                <div class="col-xs-6">
-                                                        <img src="/arquivos/Politica_-_Acompanhe.png" />
-                                                    </div>
-                                                    <div class="col-xs-6" style="margin-left: -9em;">
-                                                        <h5>ACOMPANHE</h5>
-                                                        <small>o seu pedido</small>
-                                                    </div>
-                                        </div>
-                                        <div class="item">
-                                                <div class="col-xs-6">
-                                                        <img src="/arquivos/Politica_-_Solicite_um_Orcamento.png" />
-                                                    </div>
-                                                    <div class="col-xs-6" style="margin-left: -9em;">
-                                                        <h5>SOLICITE</h5>
-                                                        <small>um orçamento</small>
-                                                    </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                    
-            </section>
-           
-        </section>
-        <section id="home-content" class="container-fluid">
-            <div class="container">
-                <div id="category-extra-middle"></div>
-
-
-                <div id="preco-baixo">
-                    <div class="row">
-                        <h3 class="section-title">Produtos com <span>Preço Baixo</span></h3>
-                    </div>
-                    <div class="row">
-                        <vtex:contentPlaceHolder id="preco-baixo" />
-                    </div>
-                </div>
-
-                <div id="campanhas-ativas">
-                    <div class="row">
-                        <h3 class="section-title"><img src="/arquivos/plussign.png" />Sobre nossas campanhas ativas</h3>
-                    </div>
-                    <vtex:contentPlaceHolder id="campanha-ativa" />
-                </div>
-                <div id="colecoes">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <h3>Navegue pela coleção:
-                                <a class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-                                    Nome do primeiro da lista <i class="fa fa-chevron-down"></i>
-                                </a>
-                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"
-                                    id="colection-dropdown">
-                                    <li role="presentation" id="material-eletrico">
-                                        <p role="menuitem" tabindex="-1">Material Elétrico</p>
-                                    </li>
-                                    <li role="presentation" id="material-colecao">
-                                        <p role="menuitem" tabindex="-1">Colecao</p>
-                                    </li>
-                                    <li role="presentation">
-                                        <p role="menuitem" tabindex="-1">Colecao</p>
-                                    </li>
-                                    <li role="presentation">
-                                        <p role="menuitem" tabindex="-1">Colecao </p>
-                                    </li>
-                                </ul>
-                            </h3>
-
-
-                        </div>
-
-                    </div>
-
-                    <!-- abaixo sera uma colecao desses rows, cada um sendo uma coleção, cada um em seu content placeholder-->
-                    <div class="row colection-item" id="material-eletrico">
-                        <div class="col-xs-12 col-sm-4">
-                            <div class="big-box"><img src="/arquivos/material-eletrico.png" />
-                                <div class="colection-description-box">
-                                    <h5>Conheça nossa coleção de</h5>
-                                    <h3>Material eletrico</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-8">
-                            <div class="row" style="margin-bottom: 3em;">
-                                <div class="col-xs-6 col-sm-3">
-                                    <div class="mini-box"><img src="/arquivos/material-eletrico1.png" /></div>
-                                </div>
-                                <div class="col-xs-6 col-sm-3">
-                                    <div class="mini-box"><img src="/arquivos/material-eletrico2.png" /></div>
-                                </div>
-                                <div class="col-xs-6 col-sm-3">
-                                    <div class="mini-box"><img src="/arquivos/material-eletrico3.png" /></div>
-                                </div>
-                                <div class="col-xs-6 col-sm-3">
-                                    <div class="mini-box"><img src="/arquivos/material-eletrico4.png" /></div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-6 col-sm-3">
-                                    <div class="mini-box"><img src="/arquivos/material-eletrico5.png" /></div>
-                                </div>
-                                <div class="col-xs-6 col-sm-3">
-                                    <div class="mini-box"><img src="/arquivos/material-eletrico6.png" /></div>
-                                </div>
-                                <div class="col-xs-6 col-sm-3">
-                                    <div class="mini-box"><img src="/arquivos/material-eletrico7.png" /></div>
-                                </div>
-                                <div class="col-xs-6 col-sm-3">
-                                    <div class="mini-box"><img src="/arquivos/material-eletrico8.png" /></div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="row colection-item" id="material-colecao">
-                        <div class="col-xs-6">
-                            <div class="big-box">image</div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <div class="mini-box">a</div>
-                                </div>
-                                <div class="col-xs-6">
-                                    <div class="mini-box">b</div>
-                                </div>
-                                <div class="col-xs-6">
-                                    <div class="mini-box">c</div>
-                                </div>
-                                <div class="col-xs-6">
-                                    <div class="mini-box">d</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="destaques-display">
-                    <div class="row">
-                        <h3>Destaques em: <span>nome do depto</span></h3>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <ul class="list-inline destaqueslist">
-                                <li id="aquecedores"><span>Aquecedores</span>
-                                    <div class="select-triangle"></div>
-                                </li>
-                                <li id="ventiladores"><span>Ventiladores</span>
-                                    <div class="select-triangle"></div>
-                                </li>
-                                <li id="duchas"><span>Duchas e Chuveiros</span>
-                                    <div class="select-triangle"></div>
-                                </li>
-                                <li id="loucas"><span>Louças e Metais</span>
-                                    <div class="select-triangle"></div>
-                                </li>
-                                <li id="tintas"><span>Tintas e Acessórios</span>
-                                    <div class="select-triangle"></div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-
-                            <div id="aquecedores" class="destaques-shelf">
-                                a
-                                <vtex:contentPlaceHolder id="Aquecedores" />
-                            </div>
-                            <div id="ventiladores" class="destaques-shelf">
-                                b
-                                <vtex:contentPlaceHolder id="Ventiladores" />
-                            </div>
-                            <div id="duchas" class="destaques-shelf">
-                                c
-                                <vtex:contentPlaceHolder id="Duchas" />
-                            </div>
-                            <div id="loucas" class="destaques-shelf">
-                                d
-                                <vtex:contentPlaceHolder id="Loucas" />
-                            </div>
-                            <div id="tintas" class="destaques-shelf">
-                                e
-                                <vtex:contentPlaceHolder id="Tintas" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="destaques-display">
-                    <div class="row">
-                        <h3>Destaques em: <span>nome do depto</span></h3>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <ul class="list-inline destaqueslist">
-                                <li id="iluminacao"><span>Iluminação</span>
-                                    <div class="select-triangle"></div>
-                                </li>
-                                <li id="Medidores"><span>Medidores e Reguladores</span>
-                                    <div class="select-triangle"></div>
-                                </li>
-                                <li id="placas"><span>Placas de Sinalização</span>
-                                    <div class="select-triangle"></div>
-                                </li>
-                                <li id="Prevencao"><span>Prevenção contra incêndio</span>
-                                    <div class="select-triangle"></div>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-
-                            <div id="iluminacao" class="destaques-shelf">
-                                1
-                                <vtex:contentPlaceHolder id="iluminacao" />
-                            </div>
-                            <div id="Medidores" class="destaques-shelf">
-                                2
-                                <vtex:contentPlaceHolder id="medidores" />
-                            </div>
-                            <div id="placas" class="destaques-shelf">
-                                3
-                                <vtex:contentPlaceHolder id="placas" />
-                            </div>
-                            <div id="Prevencao" class="destaques-shelf">
-                                4
-                                <vtex:contentPlaceHolder id="Prevencao" />
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-                <div class="depto-nav hidden-xs">
-                    <div class="row">
-                        <h3 class="section-title">Navegue por <span>Departamentos</span></h3>
-                    </div>
-                    <div class="row" id="nav-grid">
-
-                        <div class="col-sm-2 grid-start">
-                            <div class="content">
-                                <a href="#">
-                                    <img src="/arquivos/Categorias_-_Aquecedores.png" />
-                                    <span>
-                                        Aquecedores
-                                    </span>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="content">
-                                <a href="#">
-                                    <img src="/arquivos/Categorias_-_Casa_e_Jardim.png" />
-                                    <span>
-                                        Casa e Jardim
-                                    </span>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="content">
-                                <a href="#">
-                                    <img src="/arquivos/Categorias_-_Duchas_e_Chuveiros.png" />
-                                    <span>
-                                        Duchas e Chuveiros
-                                    </span>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="content">
-                                <a href="#">
-                                    <img src="/arquivos/Categorias_-_Ferramentas.png" />
-                                    <span>
-                                        Ferramentas
-                                    </span>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="content">
-                                <a href="#">
-                                    <img src="/arquivos/Categorias_-_Lampadas.png" />
-                                    <span>
-                                        Iluminação
-                                    </span>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="col-sm-2 grid-ending">
-                            <div class="content">
-                                <a href="#">
-                                    <img src="/arquivos/Categorias_-_Loucas_e_Metais.png" />
-                                    <span>
-                                        Louças e Metais
-                                    </span>
-                                </a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="row" id="bottomrow">
-                        <div class="col-sm-2 grid-start">
-                            <div class="content">
-                                <a href="#">
-                                    <img src="/arquivos/Categorias_-_Materiais_Eletricos.png" />
-                                    <span>
-                                        Material Elétrico
-                                    </span>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="content">
-                                <a href="#">
-                                    <img src="/arquivos/Categorias_-_Materiais_Hidraulicos.png" />
-                                    <span>
-                                        Material e Hidráulico
-                                    </span>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="content">
-                                <a href="#">
-                                    <img src="/arquivos/Categorias_-_Medidores_e_Reguladores.png" />
-                                    <span>
-                                        Medidores e Reguladores
-                                    </span>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="content">
-                                <a href="#">
-                                    <img src="/arquivos/Categorias_-_Prevencao_Contra_Incendio.png" />
-                                    <span>
-                                        Prevenção contra Incêndio
-                                    </span>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="content">
-                                <a href="#">
-                                    <img src="/arquivos/Categorias_-_Tintas_e_Acessorios.png" />
-                                    <span>
-                                        Tintas e Acessórios
-                                    </span>
-                                </a>
-                            </div>
-
-                        </div>
-                        <div class="col-sm-2 grid-ending">
-                            <div class="content">
-                                <a href="#">
-                                    <img src="/arquivos/Categorias_-_Ventilador.png" />
-                                    <span>
-                                        Ventiladores
-                                    </span>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="marca-nav">
-                    <div class="row">
-                        <h3 class="section-title">Navegue por <span>Marcas</span></h3>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
-
-                            <div class="owl-carousel owl-theme" id="carouselmarcas"
-                                style="margin-top: 1em;margin-bottom: 4em;">
-                                <!--<vtex:contentPlaceHolder id="marcascarrossel" /> -->
-
-                                <div class="item">
-
-                                    <a href="#">
-                                        <div class="micro-banner">
-                                            <img src="/arquivos/amanco-fundo.png" alt="Owl Image" />
-                                        </div>
-                                        <div class="box-text">
-                                            <img src="/arquivos/amanco-logo.png" alt="Owl Image" />
-                                            <p>Material Hidráulico</p>
-                                        </div>
-
-                                    </a></div>
-                                <div class="item">
-
-                                    <a href="#">
-                                        <div class="micro-banner">
-                                            <img src="/arquivos/belfix-fundo.png" alt="Owl Image" />
-                                        </div>
-                                        <div class="box-text">
-                                            <img src="/arquivos/belfix-logo.png" alt="Owl Image" />
-                                            <p>Ferramentas</p>
-                                        </div>
-
-                                    </a></div>
-
-                                <div class="item">
-
-                                    <a href="#">
-                                        <div class="micro-banner">
-                                            <img src="/arquivos/deca-fundo.png" alt="Owl Image" />
-                                        </div>
-                                        <div class="box-text">
-                                            <img src="/arquivos/deca-logo.png" alt="Owl Image" />
-                                            <p>Torneiras</p>
-                                        </div>
-
-                                    </a></div>
-                                <div class="item">
-
-                                    <a href="#">
-                                        <div class="micro-banner">
-                                            <img src="/arquivos/docol-fundo.png" alt="Owl Image" />
-                                        </div>
-                                        <div class="box-text">
-                                            <img src="/arquivos/docol-logo.png" alt="Owl Image" />
-                                            <p>Lavatórios</p>
-                                        </div>
-
-                                    </a></div>
-                                <div class="item">
-
-                                    <a href="#">
-                                        <div class="micro-banner">
-                                            <img src="/arquivos/gamma-fundo.png" alt="Owl Image" />
-                                        </div>
-                                        <div class="box-text">
-                                            <img src="/arquivos/gamma-logo.png" alt="Owl Image" />
-                                            <p>Ferramentas</p>
-                                        </div>
-
-                                    </a></div>
-                                <div class="item">
-
-                                    <a href="#">
-                                        <div class="micro-banner">
-                                            <img src="/arquivos/intelbras-fundo.png" alt="Owl Image" />
-                                        </div>
-                                        <div class="box-text">
-                                            <img src="/arquivos/intelbras-logo.png" alt="Owl Image" />
-                                            <p>Ferramentas</p>
-                                        </div>
-
-                                    </a></div>
-                                <div class="item">
-
-                                    <a href="#">
-                                        <div class="micro-banner">
-                                            <img src="/arquivos/komeco-fundo.png" alt="Owl Image" />
-                                        </div>
-                                        <div class="box-text">
-                                            <img src="/arquivos/komeco-logo.png" alt="Owl Image" />
-                                            <p>Ferramentas</p>
-                                        </div>
-
-                                    </a></div>
-                                <div class="item">
-
-                                    <a href="#">
-                                        <div class="micro-banner">
-                                            <img src="/arquivos/segurimax-fundo.png" alt="Owl Image" />
-                                        </div>
-                                        <div class="box-text">
-                                            <img src="/arquivos/segurimax-logo.png" alt="Owl Image" />
-                                            <p>Ferramentas</p>
-                                        </div>
-
-                                    </a></div>
-                                <div class="item">
-
-                                    <a href="#">
-                                        <div class="micro-banner">
-                                            <img src="/arquivos/tekbond-fundo.png" alt="Owl Image" />
-                                        </div>
-                                        <div class="box-text">
-                                            <img src="/arquivos/tekbond-logo.png" alt="Owl Image" />
-                                            <p>Ferramentas</p>
-                                        </div>
-
-                                    </a></div>
-                                <div class="item">
-
-                                    <a href="#">
-                                        <div class="micro-banner">
-                                            <img src="/arquivos/tigre-fundo.png" alt="Owl Image" />
-                                        </div>
-                                        <div class="box-text">
-                                            <img src="/arquivos/tigre-logo.png" alt="Owl Image" />
-                                            <p>Ferramentas</p>
-                                        </div>
-
-                                    </a></div>
-                                <div class="item">
-
-                                    <a href="#">
-                                        <div class="micro-banner">
-                                            <img src="/arquivos/tupy-fundo.png" alt="Owl Image" />
-                                        </div>
-                                        <div class="box-text">
-                                            <img src="/arquivos/tupy-logo.png" alt="Owl Image" />
-                                            <p>Ferramentas</p>
-                                        </div>
-
-                                    </a></div>
-
-
-
-                            </div>
-                            <style>
-                                #carouselmarcas .item {
-                                    text-align: center;
-                                    margin: 10px;
-                                }
-                            </style>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="col-xs-6">
-                        <img src="/arquivos/dezporcento.png" class="bannerpromo" />
-                    </div>
-                    <div class="col-xs-6">
-                        <img src="/arquivos/compre_e_retire.png" class="bannerpromo" />
-                    </div>
-                </div>
-            </div>
-
-
+ <!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+     xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+ 
+ <head>
+     <title> Modelo Vtex</title>
+     <vtex:metaTags />
+     <vtex:template id="commonStyles" />
+     <link href="/arquivos/home.css" rel="stylesheet" type="text/css" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+ </head>
+ 
+ <body id="home-page">
+ 
+     <div class="page">
+ 
+         <!--  SubTemplate: Header -->
+         <vtex:template id="Header" />
+         <!-- /SubTemplate: Header -->
+ 
+         <div id="home-extra-top"></div>
+         <section class="container-fluid" style="padding-right: 0px;
+         padding-left: 0px;">
+             <div class="fullbanner">
+                 <vtex:contentPlaceHolder id="bannersegmentado" />
+             </div><!-- .fullbanner -->
+             <section  id="propostas">
+                     <div class="container">
+                             <div class="row hidden-xs" id="underbanners">
+                                     <div class="col-sm-2">
+                                         <div class="col-sm-6">
+                                             <img src="/arquivos/Politica_-_15_OFF.png" />
+                                         </div>
+                                         <div class="col-sm-8" >
+                                             <h5>15% OFF</h5>
+                                             <small>no boleto bancário</small>
+                                         </div>
+                     
+                                     </div>
+                                     <div class="col-sm-2">
+                                         <div class="col-sm-6">
+                                             <img src="/arquivos/Politica_-_6x_sem_Juros.png" />
+                                         </div>
+                                         <div class="col-sm-8" >
+                                             <h5>6X SEM JUROS</h5>
+                                             <small>em todo site</small>
+                                         </div>
+                     
+                                     </div>
+                                     <div class="col-sm-2">
+                                         <div class="col-sm-6">
+                                             <img src="/arquivos/Politica_-_Retire_na_Loja.png" />
+                                         </div>
+                     
+                     
+                                         <div class="col-sm-8" >
+                                             <h5>RETIRE NA LOJA</h5>
+                                             <small>compre pelo site</small>
+                                         </div>
+                                     </div>
+                                     <div class="col-sm-2">
+                                         <div class="col-sm-6">
+                                             <img src="/arquivos/Politica_-_Duvidas.png" />
+                                         </div>
+                     
+                     
+                                         <div class="col-sm-8" >
+                                             <h5>WHATSAPP</h5>
+                                             <small>tire suas dúvidas</small>
+                                         </div>
+                                     </div>
+                                     <div class="col-sm-2">
+                                         <div class="col-sm-6">
+                                             <img src="/arquivos/Politica_-_Acompanhe.png" />
+                                         </div>
+                     
+                     
+                                         <div class="col-sm-8" >
+                                             <h5>ACOMPANHE</h5>
+                                             <small>o seu pedido</small>
+                                         </div>
+                                     </div>
+                                     <div class="col-sm-2">
+                                         <div class="col-sm-6">
+                                             <img src="/arquivos/Politica_-_Solicite_um_Orcamento.png" />
+                                         </div>
+                     
+                     
+                                         <div class="col-sm-8" >
+                                             <h5>SOLICITE</h5>
+                                             <small>um orçamento</small>
+                                         </div>
+                                     </div>
+                                 </div>
+ 
+                             <div class="row visible-xs" id="underbannersMobile">
+                                 <div class="col-sm-12">
+                                         <div class="owl-carousel owl-theme" id="carouselpropostas"
+                                         style="margin-top: 1em;margin-bottom: 2em;">
+                                         <div class="item">
+                                                 <div class="col-xs-6">
+                                                         <img src="/arquivos/Politica_-_15_OFF.png" />
+                                                     </div>
+                                                     <div class="col-xs-6" style="margin-left: -9em;">
+                                                         <h5>15% OFF</h5>
+                                                         <small>no boleto bancário</small>
+                                                     </div>
+                                         </div>
+                                         <div class="item">
+                                                 <div class="col-xs-6">
+                                                         <img src="/arquivos/Politica_-_6x_sem_Juros.png" />
+                                                     </div>
+                                                     <div class="col-xs-6" style="margin-left: -9em;">
+                                                         <h5>6X SEM JUROS</h5>
+                                                         <small>em todo site</small>
+                                                     </div>
+                                         </div>
+                                         <div class="item">
+                                                 <div class="col-xs-6">
+                                                         <img src="/arquivos/Politica_-_Retire_na_Loja.png" />
+                                                     </div>
+                                                     <div class="col-xs-6" style="margin-left: -9em;">
+                                                         <h5>RETIRE NA LOJA</h5>
+                                                         <small>compre pelo site</small>
+                                                     </div>
+                                         </div>
+                                         <div class="item">
+                                                 <div class="col-xs-6">
+                                                         <img src="/arquivos/Politica_-_Duvidas.png" />
+                                                     </div>
+                                                     <div class="col-xs-6" style="margin-left: -9em;">
+                                                         <h5>WHATSAPP</h5>
+                                                         <small>tire suas duvidas</small>
+                                                     </div>
+                                         </div>
+                                         <div class="item">
+                                                 <div class="col-xs-6">
+                                                         <img src="/arquivos/Politica_-_Acompanhe.png" />
+                                                     </div>
+                                                     <div class="col-xs-6" style="margin-left: -9em;">
+                                                         <h5>ACOMPANHE</h5>
+                                                         <small>o seu pedido</small>
+                                                     </div>
+                                         </div>
+                                         <div class="item">
+                                                 <div class="col-xs-6">
+                                                         <img src="/arquivos/Politica_-_Solicite_um_Orcamento.png" />
+                                                     </div>
+                                                     <div class="col-xs-6" style="margin-left: -9em;">
+                                                         <h5>SOLICITE</h5>
+                                                         <small>um orçamento</small>
+                                                     </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                     </div>
+                     
+             </section>
+            
+         </section>
+         <section id="home-content" class="container-fluid" style="padding-right: 8em;padding-left: 8em;">
+             
+                 <div id="category-extra-middle"></div>
+ 
+ 
+                 <div id="preco-baixo">
+                     <div class="row">
+                         <h3 class="section-title">Produtos com <span>Preço Baixo</span></h3>
+                     </div>
+                     <div class="row">
+                         <vtex:contentPlaceHolder id="preco-baixo" />
+                     </div>
+                 </div>
+ 
+                 <div id="campanhas-ativas">
+                     <div class="row">
+                         <h3 class="section-title"><img src="/arquivos/plussign.png" />Sobre nossas campanhas ativas</h3>
+                     </div>
+                     <vtex:contentPlaceHolder id="campanha-ativa" />
+                 </div>
+                 <div id="colecoes">
+                     <div class="row">
+                         <div class="col-sm-12">
+                             <h3>Navegue pela coleção:
+                                 <a class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                     Nome do primeiro da lista <i class="fa fa-chevron-down"></i>
+                                 </a>
+                                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1"
+                                     id="colection-dropdown">
+                                     <li role="presentation" id="material-eletrico">
+                                         <p role="menuitem" tabindex="-1">Material Elétrico</p>
+                                     </li>
+                                     <li role="presentation" id="material-colecao">
+                                         <p role="menuitem" tabindex="-1">Colecao</p>
+                                     </li>
+                                     <li role="presentation">
+                                         <p role="menuitem" tabindex="-1">Colecao</p>
+                                     </li>
+                                     <li role="presentation">
+                                         <p role="menuitem" tabindex="-1">Colecao </p>
+                                     </li>
+                                 </ul>
+                             </h3>
+ 
+ 
+                         </div>
+ 
+                     </div>
+ 
+                     <!-- abaixo sera uma colecao desses rows, cada um sendo uma coleção, cada um em seu content placeholder-->
+                     <div class="row colection-item" id="material-eletrico">
+                         <div class="col-xs-12 col-sm-4">
+                             <div class="big-box"><img src="/arquivos/material-eletrico.png" />
+                                 <div class="colection-description-box">
+                                     <h5>Conheça nossa coleção de</h5>
+                                     <h3>Material eletrico</h3>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="col-xs-12 col-sm-8">
+                             <div class="row" style="margin-bottom: 3em;">
+                                 <div class="col-xs-6 col-sm-3">
+                                     <div class="mini-box"><img src="/arquivos/material-eletrico1.png" /></div>
+                                 </div>
+                                 <div class="col-xs-6 col-sm-3">
+                                     <div class="mini-box"><img src="/arquivos/material-eletrico2.png" /></div>
+                                 </div>
+                                 <div class="col-xs-6 col-sm-3">
+                                     <div class="mini-box"><img src="/arquivos/material-eletrico3.png" /></div>
+                                 </div>
+                                 <div class="col-xs-6 col-sm-3">
+                                     <div class="mini-box"><img src="/arquivos/material-eletrico4.png" /></div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                                 <div class="col-xs-6 col-sm-3">
+                                     <div class="mini-box"><img src="/arquivos/material-eletrico5.png" /></div>
+                                 </div>
+                                 <div class="col-xs-6 col-sm-3">
+                                     <div class="mini-box"><img src="/arquivos/material-eletrico6.png" /></div>
+                                 </div>
+                                 <div class="col-xs-6 col-sm-3">
+                                     <div class="mini-box"><img src="/arquivos/material-eletrico7.png" /></div>
+                                 </div>
+                                 <div class="col-xs-6 col-sm-3">
+                                     <div class="mini-box"><img src="/arquivos/material-eletrico8.png" /></div>
+                                 </div>
+                             </div>
+ 
+                         </div>
+                     </div>
+                     <div class="row colection-item" id="material-colecao">
+                         <div class="col-xs-6">
+                             <div class="big-box">image</div>
+                         </div>
+                         <div class="col-xs-6">
+                             <div class="row">
+                                 <div class="col-xs-6">
+                                     <div class="mini-box">a</div>
+                                 </div>
+                                 <div class="col-xs-6">
+                                     <div class="mini-box">b</div>
+                                 </div>
+                                 <div class="col-xs-6">
+                                     <div class="mini-box">c</div>
+                                 </div>
+                                 <div class="col-xs-6">
+                                     <div class="mini-box">d</div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+ 
+                 <div class="destaques-display">
+                     <div class="row">
+                         <h3>Destaques em: <span>nome do depto</span></h3>
+                     </div>
+                     <div class="row">
+                         <div class="col-sm-12">
+                             <ul class="list-inline destaqueslist">
+                                 <li id="aquecedores"><span>Aquecedores</span>
+                                     <div class="select-triangle"></div>
+                                 </li>
+                                 <li id="ventiladores"><span>Ventiladores</span>
+                                     <div class="select-triangle"></div>
+                                 </li>
+                                 <li id="duchas"><span>Duchas e Chuveiros</span>
+                                     <div class="select-triangle"></div>
+                                 </li>
+                                 <li id="loucas"><span>Louças e Metais</span>
+                                     <div class="select-triangle"></div>
+                                 </li>
+                                 <li id="tintas"><span>Tintas e Acessórios</span>
+                                     <div class="select-triangle"></div>
+                                 </li>
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-sm-12">
+ 
+                             <div id="aquecedores" class="destaques-shelf">
+                                 a
+                                 <vtex:contentPlaceHolder id="Aquecedores" />
+                             </div>
+                             <div id="ventiladores" class="destaques-shelf">
+                                 b
+                                 <vtex:contentPlaceHolder id="Ventiladores" />
+                             </div>
+                             <div id="duchas" class="destaques-shelf">
+                                 c
+                                 <vtex:contentPlaceHolder id="Duchas" />
+                             </div>
+                             <div id="loucas" class="destaques-shelf">
+                                 d
+                                 <vtex:contentPlaceHolder id="Loucas" />
+                             </div>
+                             <div id="tintas" class="destaques-shelf">
+                                 e
+                                 <vtex:contentPlaceHolder id="Tintas" />
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+ 
+ 
+                 <div class="destaques-display">
+                     <div class="row">
+                         <h3>Destaques em: <span>nome do depto</span></h3>
+                     </div>
+                     <div class="row">
+                         <div class="col-sm-12">
+                             <ul class="list-inline destaqueslist">
+                                 <li id="iluminacao"><span>Iluminação</span>
+                                     <div class="select-triangle"></div>
+                                 </li>
+                                 <li id="Medidores"><span>Medidores e Reguladores</span>
+                                     <div class="select-triangle"></div>
+                                 </li>
+                                 <li id="placas"><span>Placas de Sinalização</span>
+                                     <div class="select-triangle"></div>
+                                 </li>
+                                 <li id="Prevencao"><span>Prevenção contra incêndio</span>
+                                     <div class="select-triangle"></div>
+                                 </li>
+ 
+                             </ul>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="col-sm-12">
+ 
+                             <div id="iluminacao" class="destaques-shelf">
+                                 1
+                                 <vtex:contentPlaceHolder id="iluminacao" />
+                             </div>
+                             <div id="Medidores" class="destaques-shelf">
+                                 2
+                                 <vtex:contentPlaceHolder id="medidores" />
+                             </div>
+                             <div id="placas" class="destaques-shelf">
+                                 3
+                                 <vtex:contentPlaceHolder id="placas" />
+                             </div>
+                             <div id="Prevencao" class="destaques-shelf">
+                                 4
+                                 <vtex:contentPlaceHolder id="Prevencao" />
+                             </div>
+ 
+                         </div>
+                     </div>
+                 </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                 <div class="depto-nav hidden-xs">
+                     <div class="row">
+                         <h3 class="section-title">Navegue por <span>Departamentos</span></h3>
+                     </div>
+                     <div class="row" id="nav-grid">
+ 
+                         <div class="col-sm-2 grid-start">
+                             <div class="content">
+                                 <a href="#">
+                                     <img src="/arquivos/Categorias_-_Aquecedores.png" />
+                                     <span>
+                                         Aquecedores
+                                     </span>
+                                 </a>
+                             </div>
+ 
+                         </div>
+                         <div class="col-sm-2">
+                             <div class="content">
+                                 <a href="#">
+                                     <img src="/arquivos/Categorias_-_Casa_e_Jardim.png" />
+                                     <span>
+                                         Casa e Jardim
+                                     </span>
+                                 </a>
+                             </div>
+ 
+                         </div>
+                         <div class="col-sm-2">
+                             <div class="content">
+                                 <a href="#">
+                                     <img src="/arquivos/Categorias_-_Duchas_e_Chuveiros.png" />
+                                     <span>
+                                         Duchas e Chuveiros
+                                     </span>
+                                 </a>
+                             </div>
+ 
+                         </div>
+                         <div class="col-sm-2">
+                             <div class="content">
+                                 <a href="#">
+                                     <img src="/arquivos/Categorias_-_Ferramentas.png" />
+                                     <span>
+                                         Ferramentas
+                                     </span>
+                                 </a>
+                             </div>
+ 
+                         </div>
+                         <div class="col-sm-2">
+                             <div class="content">
+                                 <a href="#">
+                                     <img src="/arquivos/Categorias_-_Lampadas.png" />
+                                     <span>
+                                         Iluminação
+                                     </span>
+                                 </a>
+                             </div>
+ 
+                         </div>
+                         <div class="col-sm-2 grid-ending">
+                             <div class="content">
+                                 <a href="#">
+                                     <img src="/arquivos/Categorias_-_Loucas_e_Metais.png" />
+                                     <span>
+                                         Louças e Metais
+                                     </span>
+                                 </a>
+                             </div>
+ 
+                         </div>
+ 
+                     </div>
+ 
+ 
+                     <div class="row" id="bottomrow">
+                         <div class="col-sm-2 grid-start">
+                             <div class="content">
+                                 <a href="#">
+                                     <img src="/arquivos/Categorias_-_Materiais_Eletricos.png" />
+                                     <span>
+                                         Material Elétrico
+                                     </span>
+                                 </a>
+                             </div>
+ 
+                         </div>
+                         <div class="col-sm-2">
+                             <div class="content">
+                                 <a href="#">
+                                     <img src="/arquivos/Categorias_-_Materiais_Hidraulicos.png" />
+                                     <span>
+                                         Material e Hidráulico
+                                     </span>
+                                 </a>
+                             </div>
+ 
+                         </div>
+                         <div class="col-sm-2">
+                             <div class="content">
+                                 <a href="#">
+                                     <img src="/arquivos/Categorias_-_Medidores_e_Reguladores.png" />
+                                     <span>
+                                         Medidores e Reguladores
+                                     </span>
+                                 </a>
+                             </div>
+ 
+                         </div>
+                         <div class="col-sm-2">
+                             <div class="content">
+                                 <a href="#">
+                                     <img src="/arquivos/Categorias_-_Prevencao_Contra_Incendio.png" />
+                                     <span>
+                                         Prevenção contra Incêndio
+                                     </span>
+                                 </a>
+                             </div>
+ 
+                         </div>
+                         <div class="col-sm-2">
+                             <div class="content">
+                                 <a href="#">
+                                     <img src="/arquivos/Categorias_-_Tintas_e_Acessorios.png" />
+                                     <span>
+                                         Tintas e Acessórios
+                                     </span>
+                                 </a>
+                             </div>
+ 
+                         </div>
+                         <div class="col-sm-2 grid-ending">
+                             <div class="content">
+                                 <a href="#">
+                                     <img src="/arquivos/Categorias_-_Ventilador.png" />
+                                     <span>
+                                         Ventiladores
+                                     </span>
+                                 </a>
+                             </div>
+ 
+                         </div>
+                     </div>
+                 </div>
+ 
+ 
+ 
+ 
+                 <div class="marca-nav">
+                     <div class="row">
+                         <h3 class="section-title">Navegue por <span>Marcas</span></h3>
+                     </div>
+                     <div class="row">
+                         <div class="col-sm-12">
+ 
+                             <div class="owl-carousel owl-theme" id="carouselmarcas"
+                                 style="margin-top: 1em;margin-bottom: 4em;">
+                                 <!--<vtex:contentPlaceHolder id="marcascarrossel" /> -->
+ 
+                                 <div class="item">
+ 
+                                     <a href="#">
+                                         <div class="micro-banner">
+                                             <img src="/arquivos/amanco-fundo.png" alt="Owl Image" />
+                                         </div>
+                                         <div class="box-text">
+                                             <img src="/arquivos/amanco-logo.png" alt="Owl Image" />
+                                             <p>Material Hidráulico</p>
+                                         </div>
+ 
+                                     </a></div>
+                                 <div class="item">
+ 
+                                     <a href="#">
+                                         <div class="micro-banner">
+                                             <img src="/arquivos/belfix-fundo.png" alt="Owl Image" />
+                                         </div>
+                                         <div class="box-text">
+                                             <img src="/arquivos/belfix-logo.png" alt="Owl Image" />
+                                             <p>Ferramentas</p>
+                                         </div>
+ 
+                                     </a></div>
+ 
+                                 <div class="item">
+ 
+                                     <a href="#">
+                                         <div class="micro-banner">
+                                             <img src="/arquivos/deca-fundo.png" alt="Owl Image" />
+                                         </div>
+                                         <div class="box-text">
+                                             <img src="/arquivos/deca-logo.png" alt="Owl Image" />
+                                             <p>Torneiras</p>
+                                         </div>
+ 
+                                     </a></div>
+                                 <div class="item">
+ 
+                                     <a href="#">
+                                         <div class="micro-banner">
+                                             <img src="/arquivos/docol-fundo.png" alt="Owl Image" />
+                                         </div>
+                                         <div class="box-text">
+                                             <img src="/arquivos/docol-logo.png" alt="Owl Image" />
+                                             <p>Lavatórios</p>
+                                         </div>
+ 
+                                     </a></div>
+                                 <div class="item">
+ 
+                                     <a href="#">
+                                         <div class="micro-banner">
+                                             <img src="/arquivos/gamma-fundo.png" alt="Owl Image" />
+                                         </div>
+                                         <div class="box-text">
+                                             <img src="/arquivos/gamma-logo.png" alt="Owl Image" />
+                                             <p>Ferramentas</p>
+                                         </div>
+ 
+                                     </a></div>
+                                 <div class="item">
+ 
+                                     <a href="#">
+                                         <div class="micro-banner">
+                                             <img src="/arquivos/intelbras-fundo.png" alt="Owl Image" />
+                                         </div>
+                                         <div class="box-text">
+                                             <img src="/arquivos/intelbras-logo.png" alt="Owl Image" />
+                                             <p>Ferramentas</p>
+                                         </div>
+ 
+                                     </a></div>
+                                 <div class="item">
+ 
+                                     <a href="#">
+                                         <div class="micro-banner">
+                                             <img src="/arquivos/komeco-fundo.png" alt="Owl Image" />
+                                         </div>
+                                         <div class="box-text">
+                                             <img src="/arquivos/komeco-logo.png" alt="Owl Image" />
+                                             <p>Ferramentas</p>
+                                         </div>
+ 
+                                     </a></div>
+                                 <div class="item">
+ 
+                                     <a href="#">
+                                         <div class="micro-banner">
+                                             <img src="/arquivos/segurimax-fundo.png" alt="Owl Image" />
+                                         </div>
+                                         <div class="box-text">
+                                             <img src="/arquivos/segurimax-logo.png" alt="Owl Image" />
+                                             <p>Ferramentas</p>
+                                         </div>
+ 
+                                     </a></div>
+                                 <div class="item">
+ 
+                                     <a href="#">
+                                         <div class="micro-banner">
+                                             <img src="/arquivos/tekbond-fundo.png" alt="Owl Image" />
+                                         </div>
+                                         <div class="box-text">
+                                             <img src="/arquivos/tekbond-logo.png" alt="Owl Image" />
+                                             <p>Ferramentas</p>
+                                         </div>
+ 
+                                     </a></div>
+                                 <div class="item">
+ 
+                                     <a href="#">
+                                         <div class="micro-banner">
+                                             <img src="/arquivos/tigre-fundo.png" alt="Owl Image" />
+                                         </div>
+                                         <div class="box-text">
+                                             <img src="/arquivos/tigre-logo.png" alt="Owl Image" />
+                                             <p>Ferramentas</p>
+                                         </div>
+ 
+                                     </a></div>
+                                 <div class="item">
+ 
+                                     <a href="#">
+                                         <div class="micro-banner">
+                                             <img src="/arquivos/tupy-fundo.png" alt="Owl Image" />
+                                         </div>
+                                         <div class="box-text">
+                                             <img src="/arquivos/tupy-logo.png" alt="Owl Image" />
+                                             <p>Ferramentas</p>
+                                         </div>
+ 
+                                     </a></div>
+ 
+ 
+ 
+                             </div>
+                             <style>
+                                 #carouselmarcas .item {
+                                     text-align: center;
+                                     margin: 10px;
+                                 }
+                             </style>
+                         </div>
+ 
+                     </div>
+ 
+                 </div>
+ 
+                 <div class="row">
+                     <div class="col-xs-6">
+                         <img src="/arquivos/dezporcento.png" class="bannerpromo" />
+                     </div>
+                     <div class="col-xs-6">
+                         <img src="/arquivos/compre_e_retire.png" class="bannerpromo" />
+                     </div>
+                 </div>
+             
+ 
+ 
+            
+             
+ 
+ 
+ 
+ 
+         </section><!-- #content -->
+
+         <div class="container-fluid" style="padding-left: 0px;padding-right: 0px;">
+        
+        
             <div class="row" id="depoimentos">
-
+ 
                 <div class="col-sm-12">
                     <h3>Depoimentos de Clientes</h3>
                     <div class="owl-carousel owl-theme" id="carousel-depoimentos">
@@ -748,31 +759,17 @@
                 </div>
 
             </div>
-            <div class="row" id="newsletter">
-                <div class="col-sm-3 col-sm-offset-2 " id="newstext">
-                    <h4>NEWSLETTER</h4>
-                    <small>fique por dentro de novidades</small>
-                </div>
-                <div class="col-sm-6" id="newsform">
-                    <input id="emailform" type="email" placeholder="Digite seu e-mail" />
-                    <input id="commit" name="commit" type="submit" value="ASSINAR" />
-                </div>
-            </div>
-
-
-
-
-        </section><!-- #content -->
-
-        <div id="category-extra-bottom"></div>
-
-        <!--  SubTemplate: Footer -->
-        <vtex:template id="Footer" />
-        <!-- /SubTemplate: Footer -->
-
-    </div><!-- .container-fluid -->
-
-</body>
-<vtex:template id="commonScripts" />
-
-</html>
+        </div>
+ 
+         <div id="category-extra-bottom"></div>
+ 
+         <!--  SubTemplate: Footer -->
+         <vtex:template id="Footer" />
+         <!-- /SubTemplate: Footer -->
+ 
+     </div><!-- .container-fluid -->
+ 
+ </body>
+ <vtex:template id="commonScripts" />
+ 
+ </html>

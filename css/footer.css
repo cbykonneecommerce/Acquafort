@@ -37,6 +37,63 @@
     margin-left: 4.34em;
 }
 
+
+
+#newsletter {
+    background-color: #8BCEE6;
+    color: #00506D;
+    height: 187px;
+    padding-top: 4em;
+
+}
+
+#newsletter h4 {
+    font-weight: bold;
+}
+
+#newsform #emailform {
+    background-color: #8BCEE6;
+    border-bottom-color: #00506D;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-radius: 0px;
+    width: 25em;
+    outline-style: none;
+    box-shadow: none;
+}
+
+
+#newsform #emailform::placeholder{
+    color: rgb(0, 80, 109);
+  }
+#newsform #commit {
+    margin-left: 3em;
+    border-radius: 40px;
+    background-color: #00506D;
+    border-color: #00506D;
+    color: #8BCEE6;
+    font-weight: bold;
+    /*height: 64px;
+    width: 264px;*/
+    height: 2.7em;
+    width: 11.2em;
+    font-size: 27px;
+    outline-style: none;
+    box-shadow: none;
+}
+
+
+#newstext h4 {
+    /*font-size: 54px;*/
+    font-size: 3em;
+}
+#newstext small {
+    /*font-size: 27px;*/
+    font-size: 1.5em;
+
+}
+
 @media screen and (max-width: 450px) {
 
     .img-responsive-acqua {
@@ -47,4 +104,56 @@
     .social-icons {
         margin-left: 0em;
     }
+
+    #newsletter {
+        height: 265px;
+    }
+    #newstext {
+        margin-left: 0;
+    text-align: center;
+    }
+    #newsform {
+        margin-left: 1em;
+    }
+
+    #newsform #emailform {
+        margin-top: 1em;
+        width: 25em;
+    }
+
+    #newsform #commit {
+        margin-left: 2em;
+        margin-top: 1em;
+    }
 }
+
+
+
+@media screen and (max-width: 1450px) {
+
+    
+    #newstext {
+        margin-left: 9em;
+    }
+    #newstext h4 {
+        /*font-size: 54px;*/
+        font-size: 2em;
+    }
+    #newstext small {
+        font-size: 0.9em;
+    }
+    #newsform {
+        margin-left: 1em;
+    }
+
+    #newsform #emailform {
+        width: 19em;
+    }
+
+    #newsform #commit {
+        height: 1.7em;
+        width: 9.2em;
+    }
+  }
+
+  

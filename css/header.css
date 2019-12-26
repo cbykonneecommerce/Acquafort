@@ -43,11 +43,17 @@ font-family: Arial !important;
 }
 
 #top-menu {
-    background-color: #DEE3E6
+    background-color: #DEE3E6;
+    margin-bottom: 0px !important;
 }
 
+#storenav li {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
 #storenav li a {
     color: black;
+    font-size: 18px;
 }
 
 #admake-advanced-filter {
@@ -179,6 +185,20 @@ font-family: Arial !important;
     box-shadow: none;
 }
 
+
+
+
+
+
+@media screen and (max-width: 1700px) {
+    #storenav li {
+        margin-left: 0em;
+        margin-right: 0em;
+    }
+    #storenav li a {
+        font-size: 14px;
+    }
+}
 @media screen and (max-width: 450px) {
     .header .search .btn-buscar {
         border-radius: 26px;

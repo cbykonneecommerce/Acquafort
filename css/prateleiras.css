@@ -1,0 +1,67 @@
+.prateleira .product-name a {
+    color: #4F4F4F !important;
+    font-size: 22px !important;
+    font-weight: 400;
+    line-height: 26px;
+    font-family: 'Open Sans';
+}
+
+
+.prateleira .box-item {
+    text-align: left !important;
+}
+.prateleira .box-item:hover img {
+    opacity: 1;
+}
+
+.product-image::after {
+    content: none !important;
+    background: none !important;
+}
+.buy-button-qtd {
+    visibility:hidden
+}
+.box-item:hover {
+    border: solid 1px #D8D8D8;
+    border-radius: 10px;
+}
+.box-item:hover .buy-button-qtd {
+    visibility: visible;
+}
+.buy-button-qtd .amount-in-cart {
+    display: inline-block;
+    width: 61px;
+    text-align: center;
+    margin-right: 1em;
+    height: 3em;
+    border: solid 1px #5062C2 !important;
+    border-radius: 10px;
+}
+
+.wrapper-buy-button-asynchronous {
+    display: inline-block;
+}
+.prateleira .buy-button-qtd .btn-add-buy-button-asynchronous {
+    font-family: 'Open Sans' !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #5062C2 !important;
+    border-radius: 11px !important;
+}
+
+
+.prateleira .btn-add-buy-button-asynchronous .fa-lock {
+    display: none !important;
+}
+
+.prateleira .btn-add-buy-button-asynchronous .fa-shopping-cart {
+    margin-right: 9px;
+}
+
+.prateleira .price .best-price {
+    font-weight: bold;
+    font-size: 25px !important;
+    font-family: 'Open Sans' !important;
+    color: #5062C2 !important;
+    margin-bottom: 5px;
+}
