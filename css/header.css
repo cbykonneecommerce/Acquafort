@@ -213,5 +213,13 @@ font-family: Arial !important;
         padding-top: 0em;
     }
 
+    #mobile-cart img {
+        width: 3em;
+    }
+
+    .header .mini-cart{
+        margin-left: -1%;
+    }
+
 
 }

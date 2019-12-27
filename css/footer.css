@@ -1,5 +1,10 @@
 .footer {
     background-color: white !important;
+    margin-top: 0px !important;
+}
+
+.footer b {
+    font-family: 'Open Sans' !important;
 }
 
 
@@ -42,7 +47,7 @@
 #newsletter {
     background-color: #8BCEE6;
     color: #00506D;
-    height: 187px;
+    height: 162px;
     padding-top: 4em;
     margin-right: 0;
     margin-left: 0;
@@ -149,7 +154,7 @@
 
     #newsform #emailform {
         margin-top: 1em;
-        width: 25em;
+        width: 24em;
     }
 
     #newsform #commit {

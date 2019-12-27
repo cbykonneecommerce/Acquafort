@@ -1,0 +1,251 @@
+.product-details .product-name .productName {
+    color: #4F4F4F !important;
+    font-size: 30px;
+    font-weight: 600 !important;
+    font-family: 'Open Sans';
+    line-height: 41px !important;
+}
+
+#comprar-flutuante .descricao-preco .valor-por strong, .product-details .price-box .descricao-preco .valor-por strong {
+    color: #5062C2 !important;
+    font-family: 'Open Sans';
+    font-size: 33px;
+}
+
+.product-details .price-box, .product-info .shipping-box {
+    border-bottom: none !important;
+    border-top: none !important;
+}
+
+.product-info .buy-button-box{
+    margin-top: 50px !important;
+    margin-bottom: 50px;    
+}
+.added-to-cart {
+    display: none;
+}
+.go-to-cart-button {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    color: #fff;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-color: #5062C2 !important;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 15px;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+.add-to-cart-button {
+    color: #5062C2;
+    border: solid 2px #5062C2!important;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 20px;
+    padding-bottom: 19px;
+    border-radius: 15px;
+    font-size: 20px;
+    background-color: transparent;
+    margin-left: 1em;
+    text-decoration: none;
+    outline-style: none;
+    box-shadow: none;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+.product-info .shipping-box label {
+    color: #4F4F4F !important;
+    font-size: 15px !important;
+    font-weight: 700;
+    font-family: 'Open Sans';
+}
+
+#minitruck{
+    width: 28px;
+    margin-top: -5px;
+}
+
+.product-info .shipping-box label .fitext{
+    border: 2px solid #D3D3D3 !important;
+    border-radius: 50px !important;
+    border-right-color: transparent;
+}
+
+.product-info .shipping-box .freight-btn{
+    background: #5062C2 !important;
+    color: white !important;
+    font-weight: bold;
+    border-radius: 50px;
+    font-family: "Open Sans";
+    padding-left: 1em;
+    padding-right: 1em;
+    border: none !important;
+    padding-top: 5px;
+    margin-left: -36px;
+    margin-top: -3px;
+    padding-bottom: 5px;
+}
+
+.qtd-field {
+    width: 30px;
+    text-align: center;
+    border: none !important;
+    font-size: 25px;
+    font-weight: bold;
+    color: #5062C2;
+}
+
+.btn-mais, .btn-menos {
+    font-size: 25px;
+    font-weight: bold;
+    color: #5062C2;
+}
+
+.btn-menos{
+    margin-bottom: 1px !important;
+}
+
+.cart-counter, .buy-button-box, .product-description .product-description-box .title, .product-description .productDescription {
+    display: inline-block;
+}
+.cart-counter h5{
+    color: #4F4F4F !important;
+    font-size: 18px;
+    font-weight: 200 !important;
+    font-family: 'Open Sans';
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.product-description .product-description-box .title {
+    border-bottom: none !important;
+    color: #6C6C6C !important;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.product-description .productDescription {
+    color: #6C6C6C !important;
+    font-size: 20px !important;
+}
+
+.product-description .product-description-box h4{
+    border-bottom: none !important;
+    color: #6C6C6C !important;
+    font-size: 20px;
+}
+
+#reviews .avalie-produto #opcoes-avalie .firadio {
+    margin-top: -6px;
+}
+
+#reviews .avalie-produto #opcoes-avalie label {
+    font-family: 'Open Sans';
+    margin-right: 10px;
+}
+#reviews .avalie-produto h5, .media{
+    color: #6C6C6C !important;
+    font-family: 'Open Sans';
+}
+
+
+#reviews #formUserReview .avaliar a, #reviews #lnkPubliqueResenha {
+    background-color: #5062C2 !important;
+    border-radius: 15px !important;
+    font-family: 'Open Sans';
+    font-weight: bold !important;
+}
+
+
+#image-main {
+    border: 2px solid rgb(235, 235, 235);
+    border-radius: 15px;
+    width: 50%;
+}
+
+.product-image .apresentacao .thumbs li {
+    padding: 4px 9px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(21, 54, 61);
+    border-image: initial;
+    border-radius: 15px;
+}
+#publishUserReview #formUserReview {
+    margin-top: 8%;
+}
+
+
+@media screen and (max-width: 1700px) and (min-width: 1100px) {
+    .qtd-field {
+        
+        font-size: 20px;
+    }
+    
+    .btn-mais, .btn-menos {
+        font-size: 20px;
+    }
+
+    .go-to-cart-button {
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 20px;
+    
+    }
+    
+    .add-to-cart-button {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 15px;
+    }
+
+    
+#image-main {
+    border: 2px solid rgb(235, 235, 235);
+    border-radius: 15px;
+    width: 82%;
+    margin-right: -18%;
+}
+
+}
+
+@media screen and (max-width: 1100px) {
+    #product-content {
+        padding-left: 15px !important;
+    padding-right: 15px !important;
+    }
+    #image-main {
+        width: 100%;
+    }
+    .product-image .apresentacao .thumbs li {
+        margin-top: 1em;
+    }
+
+    .buy-button-box{
+        display: block
+    }
+    #comprar-flutuante {
+        height: 23%;
+    }
+
+    .go-to-cart-button {
+        text-align: center;
+    display: block;
+    font-size: 22px;
+    }
+    .add-to-cart-button {
+    text-align: center;
+    display: block;
+    margin-left: 0;
+    margin-top: 1em;
+    font-size: 17px;
+    }
+    
+}
