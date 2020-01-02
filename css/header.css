@@ -80,7 +80,8 @@ font-family: Arial !important;
 
 .deptonav#todas li a {
     color: black;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .deptonav#todas li:hover a {
@@ -113,20 +114,20 @@ font-family: Arial !important;
     /*    max-width: 43px; comecar a fazer assim */
 }
 
-#ajuda {
-    background-color: #5062C2;
+#ajuda, a.btn-login{
+    background-color: #5062C2 !important;
     border-radius: 30px;
-    color: white;
-    font-weight: bold;
+    color: white !important;
+    font-weight: bold !important;
     margin: 1em
 }
 
-#atendimento {
+#atendimento, a.btn-orders {
     background-color: white;
     border-radius: 30px;
-    color: #5062C2;
+    color: #5062C2 !important;
     margin: 1em;
-    border: 1px solid #5062C2;
+    border: 2px solid #5062C2;
 }
 
 .numeros {
