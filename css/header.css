@@ -15,6 +15,18 @@ font-family: Arial !important;
     border: none !important;
 }
 
+.menu-item-texto i {
+    font-size: 20px;
+    margin-left: 18px;
+}
+
+.subcat {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
 #todas ul li {
     width: 17em;
 }

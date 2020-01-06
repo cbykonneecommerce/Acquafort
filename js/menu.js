@@ -86,10 +86,10 @@ $(".depto-loucas").hover(()=>{
 
 $(".depto-medidores").hover(()=>{
     
-    $(".depto-loucas#medidores").show()
+    $(".depto-medidores#medidores").show()
 }, 
 ()=>{
-    $(".depto-loucas#medidores").hide()
+    $(".depto-medidores#medidores").hide()
 })
 
 $(".depto-sinalizacao").hover(()=>{
@@ -140,7 +140,7 @@ $(".dropdown-btn#aquecedores").toggle(() => {
 
 $(".dropdown-container").hide();
 $(".dropdown-btn#aquecedorsolar").toggle(() => {
-    $(".dropdown-container").hide();
+    //$(".dropdown-container").hide();
     $(".dropdown-btn#aquecedorsolar i").attr('class', 'fa fa-angle-up');
     $(".dropdown-container#aquecedorsolar").slideDown()
 }, () => {
@@ -151,7 +151,7 @@ $(".dropdown-btn#aquecedorsolar").toggle(() => {
 
 $(".dropdown-container").hide();
 $(".dropdown-btn#aquecedorgas").toggle(() => {
-    $(".dropdown-container").hide();
+   // $(".dropdown-container").hide();
     $(".dropdown-btn#aquecedorgas i").attr('class', 'fa fa-angle-up');
     $(".dropdown-container#aquecedorgas").slideDown()
 }, () => {
@@ -257,7 +257,7 @@ $(".dropdown-btn#medidores").toggle(() => {
 
 $(".dropdown-container").hide();
 $(".dropdown-btn#medidoresagua").toggle(() => {
-    $(".dropdown-container").hide();
+    //$(".dropdown-container").hide();
     $(".dropdown-btn#medidoresagua i").attr('class', 'fa fa-angle-up');
     $(".dropdown-container#medidoresagua").slideDown()
 }, () => {
@@ -267,7 +267,7 @@ $(".dropdown-btn#medidoresagua").toggle(() => {
 
 $(".dropdown-container").hide();
 $(".dropdown-btn#medidoresgas").toggle(() => {
-    $(".dropdown-container").hide();
+   // $(".dropdown-container").hide();
     $(".dropdown-btn#medidoresgas i").attr('class', 'fa fa-angle-up');
     $(".dropdown-container#medidoresgas").slideDown()
 }, () => {
