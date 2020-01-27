@@ -44,6 +44,7 @@
 
 .content a span {
     color: #15363D;
+    font-size: 18px;
 }
 .depto-nav #bottomrow {
     border-style: solid;
@@ -118,6 +119,11 @@
     border-color: #C8C8C8;
     border-width: thin;
     border-radius: 10px;
+    text-align: center;
+}
+
+.mini-box img {
+    max-width: 90% !important;
 }
 
 #colection-dropdown {
@@ -156,6 +162,13 @@
     border-bottom-color: transparent;
     border-width: thin;
     border-radius: 10px 10px 0px 0px;
+}
+
+.depto-nav #nav-grid .content a img, .depto-nav #bottomrow .content a img {
+    display: block;
+    max-width: 70%;
+    margin-left: 15%;
+    margin-bottom: 16px;
 }
 
 .depto-nav .col-sm-2 {
@@ -238,13 +251,21 @@
     margin-bottom: 4em;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1700px) {
 
     #carouselmarcas .owl-controls .owl-buttons > div.owl-prev {
         margin-left: -4em;
     }
     #carouselmarcas .owl-controls .owl-buttons > div.owl-next {
         margin-right: -4em;
+    }
+
+    .content {
+        padding: 1.3em 0.3em;
+    }
+
+    .content a span {
+        font-size: 11px;
     }
     
     

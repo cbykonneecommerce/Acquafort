@@ -15,6 +15,7 @@ $(document).ready(function() {
 
 
     setTimeout(()=>{
+        $('.product-details .price-box .descricao-preco .valor-por').prepend('<img src="/arquivos/avista.png" id="avista" style="width:28px;margin-top:-15px" /><p style="color:#A7A7A7; display:inline; font-size:23px"> Pague à vista</p>');
         $('.product-info .shipping-box label').prepend('<img src="/arquivos/truck2.png" id="minitruck" />');
         $(".product-info .shipping-box .freight-btn").val("Calcular");
     }, 500);
