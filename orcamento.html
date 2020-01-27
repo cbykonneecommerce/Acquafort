@@ -1,0 +1,111 @@
+<!-- 
+ *
+ * Desenvolvido por Integrando.se
+ * hello@integrando.se
+ * 
+ * Bootstrap v.3
+ *
+ -->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+
+<head>
+    <title>Orçamento</title>
+    <vtex:metaTags />
+    <vtex:template id="commonStyles" />
+    <link rel="stylesheet" href="/arquivos/orcamento.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body id="orcamento-page">
+
+    <div class="page">
+
+        <!--  SubTemplate: Header -->
+        <vtex:template id="Header" />
+        <!-- /SubTemplate: Header -->
+
+        <div id="institucional-extra-top"></div>
+        <section class="container-fluid" style="padding-right: 0px; padding-left: 0px;">
+            <img src="/orcamento-banner.png" alt=""/>
+        </section>
+
+        <section id="institucional-content" class="container-fluid" style="padding-right: 8em;padding-left: 8em;">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Solicite aqui seu <span style="font-weight: bold;color: #51A7D2;">Orçamento fácil Acquafort</span></h3>
+                    <p>É muito simples, em apenas dois passos você nos informa tudo o que precisa.</p>
+                    <p>Em menos de 48 horas,nós entraremos em contato com os valores de sua solicitação</p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 2em;">
+                <div class="col-md-4 form-box" style=" border: solid 1px #BFBFBF; border-radius: 15px;">
+                    <span>1</span><h3> Dados pessoais</h3>
+                    <p>Solicitamos apenas informações essenciais para a realização da compra</p>
+
+                    <form>
+
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">E-mail</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input"/>
+                          </div>
+                        <div class="row">
+                          <div class="col-sm-6">
+                              <label>Primeiro nome</label>
+                            <input type="text" class="form-control" placeholder="First name"/>
+                          </div>
+                          <div class="col-sm-6">
+                            <label>Sobrenome</label>
+                            <input type="text" class="form-control" placeholder="Last name"/>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label>CPF</label>
+                              <input type="text" class="form-control" placeholder="First name"/>
+                            </div>
+                            <div class="col-sm-6">
+                              <label>Telefone</label>
+                              <input type="text" class="form-control" placeholder="Last name"/>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck"/>
+                              <label class="form-check-label" for="gridCheck">
+                                Incluir dados de Pessoa jurídica
+                              </label>
+                            </div>
+                          </div>
+                
+                      </form>
+
+                      <button>Ir para listagem</button>
+                </div>
+
+
+                <div class="col-md-7 form-box"  style=" border: solid 1px #BFBFBF; border-radius: 15px;">
+                    <span>2</span> <h3> De quais materiais você precisa?</h3>
+                    <p>Solicitamos apenas informações essenciais para a realização da compra</p>
+
+                </div>
+            </div>
+
+
+        </section><!-- #content -->
+
+        <div id="institucional-extra-bottom"></div>
+
+        <!--  SubTemplate: Footer -->
+        <vtex:template id="Footer" />
+        <!-- /SubTemplate: Footer -->
+
+    </div><!-- .container-fluid -->
+
+</body>
+<vtex:template id="commonScripts" />
+
+</html>
