@@ -26,6 +26,6 @@ h3{
 }
 
 input {
-    border-radius: 25px;
+    border-radius: 25px !important;
 }
  
