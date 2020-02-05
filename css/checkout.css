@@ -1,0 +1,190 @@
+*{
+    font-family: Arial !important
+}
+
+.accordion-toggle{
+    color: #1A4176 !important;
+    font-weight: 600;
+    font-family: Arial !important
+}
+
+.step.accordion-group {
+    border: 1px solid rgb(235, 235, 235) !important;
+    border-radius: 15px;
+}
+
+input {
+    border-radius: 25px !important;
+    border: solid 1px rgb(235, 235, 235) !important;
+}
+
+.submit.btn-submit-wrapper {
+    text-align: center;
+}
+
+#go-to-shipping, #btn-go-to-payment, #payment-data-submit, #go-to-payment {
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #1A4176 !important;
+    text-shadow: none !important;
+    background-image: none !important;
+    border-color: transparent !important;
+    text-align: center;
+    border-radius: 25px;
+   
+}
+.client-notice {
+    color: #4F4F4F !important;
+}
+.step .text label, .step .select label {
+    color: #4F4F4F !important;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.vtex-omnishipping-1-x-leanShippingGroupList {
+    border: none !important;
+}
+
+
+.vtex-omnishipping-1-x-addressItemOption:hover, .vtex-omnishipping-1-x-active,.vtex-omnishipping-1-x-option:hover {
+    background: #F5F5F5 !important;
+    border-radius: 15px;
+    border: none;
+}
+
+#payment-group-bankInvoicePaymentGroup .payment-group-item-text {
+    font-weight: bold;
+    color: #434343;
+}
+
+.payment-data .steps-view, .payment-data .gift-card-section, .payment-data .payment-discounts-alert{
+    background: white;
+}
+
+#orderform-title{
+    font-weight: bold;
+    font-size: 22px;
+    color: #454545;
+}
+
+.vtex-omnishipping-1-x-summaryChange, .vtex-omnishipping-1-x-buttonEditAddress, .vtex-omnishipping-1-x-buttonCreateAddress, .vtex-omnishipping-1-x-backToAddressList{
+    border: 1px solid rgb(235, 235, 235) !important;
+    border-radius: 15px;
+    color: #4F4F4F !important;
+    font-weight: 600;
+}
+
+
+.vtex-omnishipping-1-x-leanShippingOptionActive {
+    background: white !important;
+    border-radius: 25px !important;
+    border: solid 1px rgb(235, 235, 235) !important;
+}
+
+.vtex-omnishipping-1-x-leanShippingTextLabel {
+    font-size: 11px !important;
+    color: #4F4F4F !important;
+}
+
+.shp-option-text-price.vtex-omnishipping-1-x-optionPrice {
+    color: #4F4F4F !important;
+    font-weight: 600;
+}
+
+.vtex-omnishipping-1-x-leanShippingText {
+    border-right: none !important;
+}
+
+.mini-cart h2 {
+    background: white;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: left;
+    color: rgb(26, 65, 118) !important;
+    font-family: Arial !important;
+    padding: 15px;
+}
+
+.cart-fixed{
+    border: 1px solid rgb(235, 235, 235) !important;
+    border-radius: 15px;
+    height: auto !important;
+}
+
+.mini-cart .price {
+    color: #4F4F4F !important;
+    font-weight: 600;
+}
+
+.mini-cart .item .fn {
+    white-space: initial !important;
+    color: #4F4F4F !important;
+}
+
+.mini-cart .item, .mini-cart .summary-template-holder {
+    border-top: none !important;
+}
+
+#payment-data-submit i ,.cart-items .quantity {
+    display: none;
+}
+
+table.table, .mini-cart .summary-template-holder{
+    background-color: white !important;
+}
+
+.mini-cart .url {
+    border: solid 1px #08c;
+    border-radius: 12px;
+    padding: 3px;
+}
+
+.mini-cart .table tfoot {
+    background-color: #D6D6D6;
+}
+
+.mini-cart .table tfoot td {
+    color: #4F4F4F !important;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding-bottom: 9px;
+    text-shadow: none !important;
+}
+
+.mini-cart .table tfoot td.monetary {
+   color: #4B579B !important;
+   font-weight: 600;
+}
+
+.payment-submit-wrap {
+    padding:1em;
+
+}
+
+
+#go-to-cart-button {
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    text-shadow: none !important;
+    text-align: center;
+    border-radius: 25px;
+    width: 100%;
+    border: 1px solid rgb(235, 235, 235) !important;
+    color: #4F4F4F !important;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 1em;
+}
+
+#go-to-cart-button small a {
+    color: #4F4F4F !important;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+#edit-profile-data i, .link-box-edit i {
+  display: block !important;
+}

@@ -25,7 +25,65 @@ h3{
     margin: 8px;
 }
 
-input {
+#institucional-content input {
     border-radius: 25px !important;
 }
+
+.inner-forms-title {
+    color: #434343 !important
+}
+
+.checkbox-inline input[type=checkbox] {
+    position: inherit
+}
  
+
+label{
+    margin-bottom: 10px !important;
+}
+
+.orcamentoButton {
+    font-size: 17px;
+    text-align: center;
+    background-color: #1F4276;
+    color: white;
+    font-weight: bolder;
+    padding-left: 5em;
+    padding-right: 5em;
+    border: none;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    border-radius: 50px;
+}
+
+#file-search{
+    padding-left: 3em;
+    padding-right: 3em;
+    margin-top: 8px;
+    background-color: #00B8FB;
+}
+
+#done-button {
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+#titleh3 {
+    font-size: 28px !important;
+
+}
+
+
+#institucional-content .checkbox-inline input {
+    margin-top: -1px;
+    margin-right: 5px;
+    margin-left: -10px;
+}
+
+@media screen and (min-width: 1700px) {
+    #file-search{
+        padding-left: 8.5em;
+        padding-right: 8.5em;
+    }
+}
+

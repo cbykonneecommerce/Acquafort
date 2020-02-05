@@ -6,6 +6,16 @@
     line-height: 41px !important;
 }
 
+#box-bread-brumb li:before {
+    content: ">" !important;
+}
+
+#box-bread-brumb li.last a {
+    color:#5062C2 !important;
+    font-weight: 600 !important;
+
+}
+
 #comprar-flutuante .descricao-preco .valor-por strong, .product-details .price-box .descricao-preco .valor-por strong {
     color: #5062C2 !important;
     font-family: 'Open Sans';
@@ -106,6 +116,81 @@
     padding-bottom: 5px;
 }
 
+
+.product-description-box .title {
+    text-align: left;
+    font-size: 22px;
+    color: #4F4F4F !important;
+}
+
+.product-description-box .productDescription{
+    text-align: left;
+}
+
+.sku-selector-container {
+    margin-top: 3em;
+    border-left: solid 1px #A7A7A7;
+    padding: 20px;
+
+}
+.price-box .sku-selectors {
+    margin-bottom: -3em;
+}
+.item-dimension-Voltagem span input, #caracteristicas h4 {
+    display: none;
+}
+
+.item-dimension-Voltagem span label {
+    color: #777;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 5px 10px;
+    border: solid 1px #777;
+    border-radius: 25px;
+
+} 
+.sku-selector-container ul .specification {
+    float: left;
+    margin-right: 3em;
+    font-size: 16px;
+    color: #A7A7A7;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.sku-selector-container  .topic{
+    margin-bottom: 1em;
+}
+
+#box-bread-brumb ul {
+    margin-top: 1em;
+}
+
+.ribbon-side {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #5062C2;
+    transform: rotate(-90deg);
+    margin-left: -1.4em;
+    margin-bottom: -1.7em;
+    float: left;
+}
+
+.product-description #caracteristicas tr.even {
+    background-color: #D7D7D7;
+}
+
+.product-description #caracteristicas th, .product-description #caracteristicas td {
+    color: #4F4F4F !important;
+    font-weight: 200 !important;
+}
+
+#calculoFrete {
+    margin-top: -3em;
+}
 .qtd-field {
     width: 30px;
     text-align: center;
@@ -250,10 +335,7 @@ input[type=number]::-webkit-outer-spin-button {
     .buy-button-box{
         display: block
     }
-    #comprar-flutuante {
-        height: 23%;
-    }
-
+   
     .go-to-cart-button {
         text-align: center;
     display: block;
@@ -265,6 +347,19 @@ input[type=number]::-webkit-outer-spin-button {
     margin-left: 0;
     margin-top: 1em;
     font-size: 17px;
+    }
+
+    .product-description-box .productDescription {
+        text-align: left;
+    margin-bottom: 2em;
+    }
+
+    #calculoFrete {
+        margin-top: 0em;
+    }
+
+    .product-details .price-box {
+        margin-bottom: 2em;
     }
     
 }
