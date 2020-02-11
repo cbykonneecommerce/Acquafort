@@ -87,3 +87,17 @@ label{
     }
 }
 
+
+@media screen and (max-width: 1030px) {
+    #institucional-content {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #done-button {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}

@@ -17,7 +17,7 @@
   <vtex:template id="commonStyles" />
   <link rel="stylesheet" href="/arquivos/orcamento.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  
 </head>
 
 <body id="orcamento-page">
@@ -50,27 +50,27 @@
           <form style="padding-bottom: 2em;">
 
             <div class="form-group" style="margin-top: 1.5em;">
-              <label for="formGroupExampleInput">E-mail</label>
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Seu E-mail" />
+              <label for="formGroupExampleInput">E-mail *</label>
+              <input type="text" class="form-control" id="email" placeholder="Seu E-mail" />
             </div>
             <div class="row" style="margin-top: 1.5em;">
               <div class="col-sm-6">
-                <label>Primeiro nome</label>
-                <input type="text" class="form-control" placeholder="Nome" />
+                <label>Primeiro nome *</label>
+                <input type="text" class="form-control" placeholder="Nome" id="primeironome" />
               </div>
               <div class="col-sm-6">
                 <label>Sobrenome</label>
-                <input type="text" class="form-control" placeholder="Sobrenome" />
+                <input type="text" class="form-control" placeholder="Sobrenome" id="sobrenome" />
               </div>
             </div>
             <div class="row" style="margin-top: 1.5em;">
               <div class="col-sm-6">
                 <label>CPF</label>
-                <input type="text" class="form-control" placeholder="CPF/CNPJ" />
+                <input type="text" class="form-control" placeholder="CPF/CNPJ" id="cpf" />
               </div>
               <div class="col-sm-6">
                 <label>Telefone</label>
-                <input type="text" class="form-control" placeholder="Telefone" />
+                <input type="text" class="form-control" placeholder="Telefone" id="telefone"/>
               </div>
             </div>
             <div class="form-group" style="margin-top: 2em;">
@@ -79,6 +79,28 @@
                 <label class="form-check-label" for="gridCheck">
                   Incluir dados de Pessoa jurídica
                 </label>
+              </div>
+            </div>
+
+            <div class="onlycompanies" style="    margin-bottom: 3em;">
+              <div class="form-group" style="margin-top: 1.5em;">
+                <label for="formGroupExampleInput">Razão Social</label>
+                <input type="text" class="form-control" id="razaosocial" placeholder="Razão Social" />
+              </div>
+              <div class="form-group" style="margin-top: 1.5em;">
+                <label for="formGroupExampleInput">Nome Fantasia</label>
+                <input type="text" class="form-control" id="nomefanta" placeholder="Nome Fantasia" />
+              </div>
+
+              <div class="row" style="margin-top: 1.5em;">
+                <div class="col-sm-6">
+                  <label>Inscrição Estadual</label>
+                  <input type="text" class="form-control" placeholder="Inscrição Estadual" id="inscrest" />
+                </div>
+                <div class="col-sm-6">
+                  <label>CNPJ</label>
+                  <input type="text" class="form-control" maxlength="18" placeholder="CNPJ" id="cnpj" />
+                </div>
               </div>
             </div>
             <div class="row" style="text-align: center">
@@ -121,9 +143,9 @@
                 marcas de preferência.</p>
             </div>
             <div class="col-md-6">
-              <textarea rows="5" cols="33" style="border-radius: 15px;">
+              <textarea rows="5" cols="33" style="border-radius: 15px;" id="listatext">
 
-                      </textarea>
+              </textarea>
             </div>
 
           </div>
@@ -133,16 +155,16 @@
 
 
               <label class="checkbox-inline">
-                <input type="checkbox" id="inlineCheckbox1" value="option1" /> Marca de preferência
+                <input name="consideracao" type="checkbox" id="inlineCheckbox1" value="Marca de preferência" /> Marca de preferência
               </label>
               <label class="checkbox-inline">
-                <input type="checkbox" id="inlineCheckbox2" value="option2" /> Qualidade
+                <input name="consideracao" type="checkbox" id="inlineCheckbox2" value="Qualidade" /> Qualidade
               </label>
               <label class="checkbox-inline">
-                <input type="checkbox" id="inlineCheckbox3" value="option3" /> Custo x Benefício
+                <input name="consideracao" type="checkbox" id="inlineCheckbox3" value="Custo x Benefício" /> Custo x Benefício
               </label>
               <label class="checkbox-inline">
-                <input type="checkbox" id="inlineCheckbox3" value="option3" /> Preço
+                <input name="consideracao" type="checkbox" id="inlineCheckbox4" value="Preço" /> Preço
               </label>
 
               
@@ -170,5 +192,6 @@
 
 </body>
 <vtex:template id="commonScripts" />
+<script src="/arquivos/orcamento.js"></script>
 
 </html>
