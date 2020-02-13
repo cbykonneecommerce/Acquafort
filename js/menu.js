@@ -3,23 +3,74 @@ $(".depto-todas").hover(()=>{
     $(".depto-todas#todas").show();
 
 
-    $(".deptonav:not(:first-child)").css( "margin-left", "17em" );
+  //  $(".deptonav:not(:first-child)").css( "margin-left", "0" );
 }, 
 ()=>{
     $(".depto-todas#todas").hide();
-    $(".deptonav:not(:first-child)").css( "margin-left", "0" );
+  //  $(".deptonav:not(:first-child)").css( "margin-left", "0" );
 })
 
 
+$("#storenav .depto-aquecedores").mouseenter(function() {
+    $(".depto-aquecedores#aquecedores").show()
+});
 
 
-$(".depto-aquecedores").hover(()=>{
+$(".depto-aquecedores#aquecedores").mouseleave(function() {
+    $(".depto-aquecedores#aquecedores").hide()
+});
+
+
+$("#storenav .depto-iluminacao").mouseenter(function() {
+    $(".depto-iluminacao#iluminacao").show()
+});
+
+
+$(".depto-iluminacao#iluminacao").mouseleave(function() {
+    $(".depto-iluminacao#iluminacao").hide()
+});
+
+
+
+$("#storenav .depto-eletrico").mouseenter(function() {
+    $(".depto-eletrico#eletrico").show()
+});
+
+
+$(".depto-eletrico#eletrico").mouseleave(function() {
+    $(".depto-eletrico#eletrico").hide()
+});
+
+
+$("#storenav .depto-hidraulico").mouseenter(function() {
+    $(".depto-hidraulico#hidraulico").show()
+});
+
+
+$(".depto-hidraulico#hidraulico").mouseleave(function() {
+    $(".depto-hidraulico#hidraulico").hide()
+});
+
+
+
+$("#storenav .depto-incendio").mouseenter(function() {
+    $(".depto-incendio#incendio").show()
+});
+
+
+$(".depto-incendio#incendio").mouseleave(function() {
+    $(".depto-incendio#incendio").hide()
+});
+
+
+
+/*$(".depto-aquecedores").hover(()=>{
     
     $(".depto-aquecedores#aquecedores").show()
 }, 
 ()=>{
     $(".depto-aquecedores#aquecedores").hide()
-})
+})*/
 
 $(".depto-iluminacao").hover(()=>{
     
@@ -51,7 +102,7 @@ $(".depto-incendio").hover(()=>{
 ()=>{
     $(".depto-incendio#incendio").hide()
 })
-
+/*
 $(".depto-casa").hover(()=>{
     
     $(".depto-casa#casa").show()
@@ -114,11 +165,18 @@ $(".depto-ventilador").hover(()=>{
 }, 
 ()=>{
     $(".depto-ventilador#ventilador").hide()
-})
+})*/
 
 
 
-
+$(".depto-todas#todas ul").on('click', 'li', function(e) {
+    let myClass = $(this).attr("class");
+    $(".depto-todas#todas").hide();
+    $(`.${myClass}#${myClass.split("-")[1]}`).show();
+    $(`.${myClass}#${myClass.split("-")[1]}`).mouseleave(function() {
+        $(`.${myClass}#${myClass.split("-")[1]}`).hide();
+      });
+ });
 
 
 

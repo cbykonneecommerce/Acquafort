@@ -27,9 +27,9 @@ font-family: Arial !important;
     line-height: 24px;
 }
 
-#todas ul li {
+/*#todas ul li {
     width: 17em;
-}
+}*/
 
 #todas ul li a i {
     float: right;
@@ -40,6 +40,7 @@ font-family: Arial !important;
 
 .menu-departamento {
     display: block !important;
+    overflow: visible !important;
 }
 
 #orcamento-btn {
@@ -60,8 +61,8 @@ font-family: Arial !important;
 }
 
 #storenav li {
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    margin-left: 2.1em;
+    margin-right: 2.1em;
 }
 #storenav li a {
     color: black;
@@ -76,12 +77,13 @@ font-family: Arial !important;
     background-color: #05488A;
     padding: 3em;
     position: absolute;
-    z-index: 9999;
+    z-index: 9999999;
     padding-right: 0px;
+    width: 100%
 }
 
 .deptonav#todas {
-    background-color: white;
+    background-color: transparent;
     padding: 0;
 }
 
@@ -210,8 +212,8 @@ font-family: Arial !important;
 
 @media screen and (max-width: 1700px) {
     #storenav li {
-        margin-left: 0em;
-        margin-right: 0em;
+        margin-left: 0.1em;
+        margin-right: 0.1em;
     }
     #storenav li a {
         font-size: 14px;
@@ -261,4 +263,14 @@ font-family: Arial !important;
     }
 
 
+}
+
+
+
+
+@media screen and (max-width: 1700px) {
+    .deptonav#todas .row .col-sm-2 {
+        width: 25% !important;
+        margin-left: 15px !important;
+    }
 }
