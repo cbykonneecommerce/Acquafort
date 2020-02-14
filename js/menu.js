@@ -70,7 +70,7 @@ $(".depto-incendio#incendio").mouseleave(function() {
 }, 
 ()=>{
     $(".depto-aquecedores#aquecedores").hide()
-})*/
+})
 
 $(".depto-iluminacao").hover(()=>{
     
@@ -101,7 +101,7 @@ $(".depto-incendio").hover(()=>{
 }, 
 ()=>{
     $(".depto-incendio#incendio").hide()
-})
+})*/
 /*
 $(".depto-casa").hover(()=>{
     

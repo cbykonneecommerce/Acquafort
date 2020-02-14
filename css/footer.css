@@ -49,8 +49,9 @@
 #newsletter {
     background-color: #8BCEE6;
     color: #00506D;
-    height: 162px;
-    padding-top: 4em;
+    
+    padding-top: 2em;
+    padding-bottom: 2em;
     margin-right: 0;
     margin-left: 0;
 
@@ -67,7 +68,7 @@
     border-right-color: transparent;
     border-top-color: transparent;
     border-radius: 0px;
-    width: 25em;
+    width: 39em;
     outline-style: none;
     box-shadow: none;
 }
@@ -77,7 +78,7 @@
     color: rgb(0, 80, 109);
   }
 #newsform #commit {
-    margin-left: 3em;
+    margin-left: 4em;
     border-radius: 40px;
     background-color: #00506D;
     border-color: #00506D;
@@ -85,8 +86,8 @@
     font-weight: bold;
     /*height: 64px;
     width: 264px;*/
-    height: 2.7em;
-    width: 11.2em;
+    height: 2.3em;
+    width: 11em;
     font-size: 27px;
     outline-style: none;
     box-shadow: none;
@@ -127,12 +128,13 @@
     }
 
     #newsform #emailform {
-        width: 19em;
+        width: 25em;
     }
 
     #newsform #commit {
         height: 1.7em;
         width: 9.2em;
+        margin-left: 4em;
     }
   }
 
