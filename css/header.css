@@ -15,6 +15,17 @@ font-family: Arial !important;
     border: none !important;
 }
 
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    border: none !important;
+    background: none !important;
+}
+
+
+.destaques-display .row h3 {
+    margin-left: 0.8em;
+}
+
 .menu-item-texto i {
     font-size: 20px;
     margin-left: 18px;
@@ -60,9 +71,16 @@ font-family: Arial !important;
     margin-bottom: 0px !important;
 }
 
-#storenav li {
+/*#storenav li {
     margin-left: 2.1em;
     margin-right: 2.1em;
+}*/
+
+#storenav {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    float: none !important;
 }
 #storenav li a {
     color: black;
@@ -204,16 +222,20 @@ font-family: Arial !important;
     border-color: transparent !important;
 }
 
-.fa.fa-bars {
-    color: #1A4175;
+.fa.fa-bars, .fa.fa-times {
+    color: white !important;
     font-size: 25px !important;
+}
+
+.btn-open-menu-xs  .fa.fa-bars {
+    color: #1C4175
 }
 
 
 @media screen and (max-width: 1700px) {
     #storenav li {
-        margin-left: 0.1em;
-        margin-right: 0.1em;
+      /*  margin-left: 0.1em;
+        margin-right: 0.1em;*/
     }
     #storenav li a {
         font-size: 14px;
@@ -222,6 +244,7 @@ font-family: Arial !important;
 @media screen and (max-width: 900px) {
     .header .search .btn-buscar {
         border-radius: 26px;
+        width: 18%;
     }
 
     .header .container-fluid {
@@ -247,7 +270,7 @@ font-family: Arial !important;
     .dropdown-btn {
         padding-top: 10px;
         padding-bottom: 10px;
-        font-size: 20px;
+        font-size: 16px;
         display: block;
         background-color: transparent;
         border: none;
@@ -255,7 +278,7 @@ font-family: Arial !important;
     .dropdown-container a {
         margin: 1em;
         color: white;
-        font-size: 17px;
+        font-size: 16px;
         display: block;
     }
     .sidenav,.link-login a, .link-orders a {

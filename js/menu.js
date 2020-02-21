@@ -1,5 +1,5 @@
 $(".depto-todas").hover(()=>{
-    
+    $(".deptonav").hide();
     $(".depto-todas#todas").show();
 
 
@@ -12,6 +12,7 @@ $(".depto-todas").hover(()=>{
 
 
 $("#storenav .depto-aquecedores").mouseenter(function() {
+    $(".deptonav").hide();
     $(".depto-aquecedores#aquecedores").show()
 });
 
@@ -22,6 +23,7 @@ $(".depto-aquecedores#aquecedores").mouseleave(function() {
 
 
 $("#storenav .depto-iluminacao").mouseenter(function() {
+    $(".deptonav").hide();
     $(".depto-iluminacao#iluminacao").show()
 });
 
@@ -33,6 +35,7 @@ $(".depto-iluminacao#iluminacao").mouseleave(function() {
 
 
 $("#storenav .depto-eletrico").mouseenter(function() {
+    $(".deptonav").hide();
     $(".depto-eletrico#eletrico").show()
 });
 
@@ -43,6 +46,7 @@ $(".depto-eletrico#eletrico").mouseleave(function() {
 
 
 $("#storenav .depto-hidraulico").mouseenter(function() {
+    $(".deptonav").hide();
     $(".depto-hidraulico#hidraulico").show()
 });
 
@@ -54,6 +58,7 @@ $(".depto-hidraulico#hidraulico").mouseleave(function() {
 
 
 $("#storenav .depto-incendio").mouseenter(function() {
+     $(".deptonav").hide();
     $(".depto-incendio#incendio").show()
 });
 
