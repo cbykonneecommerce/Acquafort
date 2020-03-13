@@ -1,5 +1,6 @@
 .section-title span, .destaques-display span {
     color: #38B7F8;
+    font-weight: bold;
 }
 
 #nav-grid, #bottomrow{
@@ -220,7 +221,7 @@
 }
 
 .section-title {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     margin-left: 0.8em;
 }
 

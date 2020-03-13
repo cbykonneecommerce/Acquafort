@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; box-sizing: border-box; width: 100%; height: 100%; margin: 0; padding: 0; background: #f1f1f1 !important;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{{_accountInfo.TradingName}}</title>
+    <!--[if gte mso 9]>
+        <xml>
+            <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <style>
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+    </style>
+    <style>
+        @media (max-width: 600px) {
+            
+            img {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+        }
+    </style>
+    <style>
+        @media screen and (min-width: 30em) {
+            
+            .ph4-ns {
+                padding-left: 2rem !important;
+                padding-right: 2rem !important;
+            }
+            
+            .mv4-ns {
+                margin-top: 2rem !important;
+                margin-bottom: 2rem !important;
+            }
+        }
+    </style>
+</head>
+<body style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; box-sizing: border-box; width: 100%; height: 100%; margin: 0; padding: 0; background: #f1f1f1 !important; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;">
+    <table align="center" style="width: 670px;">
+        <tr>
+            <td>
+                <div>
+                    <a href="http://{{_accountInfo.HostName}}.com.br" style="display:block;box-sizing: border-box !important;">
+                        <img alt="" border="0" width="auto" src="https://acquafort.vteximg.com.br/arquivos/acquafort-email-header.jpg">
+                    </img></a>
+                </div>
+                
+            </td>
+        </tr>
+        <tr>
+            <td >
+                <table align="center" style="width: 554px;">
+                    
+                    <tr>
+                        <td>
+                            <div>
+                                <p style="
+                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+                                text-transform: uppercase;
+                                margin: 50px 0;
+                                font-size: 20px;
+                                "
+                                >
+                                    <strong style="color: #2f6ca7;font-weight: 700 !important;">
+                                        {{#if orders}}
+                                            {{#if orders.0.clientProfileData.firstName}}
+                                                {{#compare orders.0.clientProfileData.firstName '!=' 'isAnonymous'}}
+                                                    Olá, {{orders.0.clientProfileData.firstName}}.
+                                                {{/compare}}
+                                            {{/if}}
+                                        {{else}}
+                                            {{#if clientProfileData.firstName}}
+                                                {{#compare clientProfileData.firstName '!=' 'isAnonymous'}}
+                                                    Olá, {{clientProfileData.firstName}}.
+                                                {{/compare}}
+                                            {{/if}}
+                                        {{/if}}
+                                    </strong>
+                                </p>
+                                <p>
+                                    
+                                </p>
+                                <div style="margin-bottom: 40px">
+                                    <p style="color: #5c5c5c; font-size: 14px; margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;">
+                                        {{#compare shippingData.logisticsInfo.length '>' 1}}
+                                            Seu pedido foi faturad, agora é só aguardar o envio pela transportadora.!
+                                        {{else}}
+                                            Seu pagamento foi aprovado.
+                                        {{/compare}}
+                                    </p>
+                                    <h1 style="color: #2f6ca7; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;margin: 0; font-size: 18px;">
+                                        <strong style="font-weight: 700 !important;">
+                                            Pedido nº #{{orderId}}
+                                        </strong>
+                                    </h1>
+                                </div>
+                                
+                                
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="background-color: #dbe1e4;border-radius: 10px;padding: 10px;">
+                                
+                                <table 
+                                    style="
+                                        width: 100%;"
+                                    width="100%"
+                                    border="0"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                >
+                                    <tr>
+                                        <td>
+                                            {{#compare shippingData.logisticsInfo.length '>' 1}}
+                                                <img width="100%" src="https://acquafort.vteximg.com.br/arquivos/email-order-status-pagamento-faturado.jpg?v=3" alt="">
+                                            {{else}}
+                                                <img width="100%" src="https://acquafort.vteximg.com.br/arquivos/email-order-status-pagamento-aprovado.jpg?v=3" alt="">
+                                            {{/compare}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td style="
+                                                    width:20%;
+                                                    font-size: 12px;
+                                                    line-height: 13px;
+                                                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+                                                    margin: 5px 0;
+                                                    text-align: center;
+                                                    ">
+                                                        Pedido <br> Confirmado
+                                                    </td>
+                                                    <td style="
+                                                    width:20%;
+                                                    font-size: 12px;
+                                                    line-height: 13px;
+                                                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+                                                    margin: 5px 0;
+                                                    text-align: center;
+                                                    ">
+                                                        Pagamento <br> Aprovado
+                                                    </td>
+                                                    <td style="
+                                                    width:20%;
+                                                    font-size: 12px;
+                                                    line-height: 13px;
+                                                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+                                                    margin: 5px 0;
+                                                    text-align: center;
+                                                    ">
+                                                        Pedido <br> Faturado
+                                                    </td>
+                                                    <td style="
+                                                    width:20%;
+                                                    font-size: 12px;
+                                                    line-height: 13px;
+                                                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+                                                    margin: 5px 0;
+                                                    text-align: center;
+                                                    ">
+                                                        Enviado à <br> Transportadora
+                                                    </td>
+                                                    <td style="
+                                                    width:20%;
+                                                    font-size: 12px;
+                                                    line-height: 13px;
+                                                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+                                                    margin: 5px 0;
+                                                    text-align: center;
+                                                    ">
+                                                        Pedido <br> Entrague
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </div>
+                            <table>
+                                <tr>
+                                    <td >
+                                        <h3 style="
+                                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+                                            margin: 20px 0;
+                                        ">
+                                            Pagamento
+                                        </h3>
+                                        <p style="
+                                            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+                                            margin: 10px 0;
+                                        "
+                                        >
+                                            {{#each paymentData.transactions}}
+                                            {{#compare payments.length "==" 1}}
+                                            {{#each payments}}
+                                            
+                                   
+                                                {{paymentSystemName}}
+                                                {{#if lastDigits}} final {{lastDigits}} {{/if}}
+                                                <br/>R$ {{formatCurrency value}}
+                                                {{#eq installments 1}}
+                                                à vista
+                                                {{else}}
+                                                em {{installments}}x
+                                                {{/eq}}
+                                        
+                                            {{/each}}
+                                            {{/compare}}
+                                        </p>
+                                        
+                                        {{#compare payments.length "!=" 1}}
+                                        <table >
+                                            {{#each payments}}
+                                            <tr>
+                                                <td>
+                                                    <p style="
+                                                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+                                                    ">
+                                                        {{paymentSystemName}}
+                                                        {{#if lastDigits}} final {{lastDigits}} {{/if}}
+                                                        {{#eq installments 1}}
+                                                        à vista
+                                                        {{else}}
+                                                        em {{installments}}x
+                                                        {{/eq}}
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    <p style="
+                                                        font-size: 15px;
+                                                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+                                                        border-top: 1px solid #ccc;
+                                                        padding: 50px 0;
+                                                        margin: 10px 0;
+                                                    ">
+                                                        R$ {{formatCurrency value}}
+                                                    </p>
+                                                    
+                                                </td>
+                                            </tr>
+                                            {{/each}}
+                                        </table>
+                                        {{/compare}}
+                                        {{/each}}
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <p style="
+                                        font-size: 15px;
+                                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+                                        border-top: 1px solid #ccc;
+                                        padding-top: 30px;
+                                        "
+                                        >
+                                            Caso tenha alguma dúvida, fique à vontade para entrar em contato com nossa equipe de atendimento através dos telefones:
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="
+                                    padding-top: 30px;
+                                    padding-bottom: 30px;"
+                                    >
+                                        <table style="width: 100%;">
+                                            <td style="text-align: center;">
+                                                <img src="https://acquafort.vteximg.com.br/arquivos/email-ico-phone.png" alt=""
+                                                style="
+                                                display: inline-block;
+                                                vertical-align: middle;"
+                                                >
+                                                <a 
+                                                style="
+                                                display: inline-block;
+                                                vertical-align: middle;
+                                                font-size: 27px;
+                                                font-weight: 700;
+                                                text-decoration: none;
+                                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+                                                color: #5a5c5f;
+                                                "
+                                                href="whatsapp:(41) 9999-9999"
+                                                >
+                                                    (41) 9999-9999
+                                                </a>
+                                            </td>
+                                            <td style="text-align: center;">
+                                                <img src="https://acquafort.vteximg.com.br/arquivos/email-ico-whatsapp.png" alt=""
+                                                style="
+                                                display: inline-block;
+                                                vertical-align: middle;"
+                                                >
+                                                <a
+                                                style="
+                                                display: inline-block;
+                                                vertical-align: middle;
+                                                font-size: 27px;
+                                                font-weight: 700;
+                                                text-decoration: none;
+                                                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+                                                color: #5a5c5f;
+                                                "
+                                                href="tel:(41) 333-333"
+                                                >
+                                                (41) 333-333
+                                            </a>
+                                            </td>
+                                        </table>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>
+                                        <p style="
+                                        font-size: 15px;
+                                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, Helvetica, sans-serif;
+                                        margin: 10px 0;
+                                        "
+                                        >
+                                            Atenciosamente, equipe Acquafort
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                    
+                    
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <a href="http://{{_accountInfo.HostName}}.com.br" style="display:block;box-sizing: border-box !important;">
+                        <img alt="" border="0" width="auto" src="https://acquafort.vteximg.com.br/arquivos/acquafort-email-footer.jpg?v=3">
+                    </img></a>
+                </div>
+                
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
