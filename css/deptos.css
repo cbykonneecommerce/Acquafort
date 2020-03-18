@@ -28,6 +28,48 @@ hr {
     display: none !important;
 }
 
+#admake-advanced-filter {
+    border: none;
+}
+
+.fa-square-o {
+    color: #D5D5D5;
+    padding: 2px;
+    border-radius: 3px;
+}
+.filtro-ativo .fa-square-o {
+    background-color: #4150AA;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+#admake-advanced-filter .opcoes .ver-filtros:after {
+    color: #4150AA !important;
+
+}
+
+#admake-advanced-filter h2 {
+    display: none;
+}
+
+.filtro-ativo .fa-square-o:before {
+    content: "\f00c" !important;
+    color: white;
+}
+
+.installment {
+    color: #4F4F4F !important;
+}
+#admake-advanced-filter .box-filtro.checkbox li a {
+    color: #4F4F4F !important
+}
+
+#admake-advanced-filter > .box-filtro h3 {
+    color: #4F4F4F !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+    line-height: 35px !important;
+}
 @media (max-width: 1700px) {
   
     .sidebar h2, .filtros-ativos h2 {

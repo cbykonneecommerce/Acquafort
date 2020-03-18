@@ -56,7 +56,9 @@
                  <aside class="col-xs-12 col-sm-3 hidden-sm sidebar">
                      <h2>Defina <span style="font-weight: bold; color:#2F6CA7">Seus Filtros</span></h2>
                     <hr/>
- <vtex.cmc:searchNavigator/> 
+
+                    <vtex.cmc:singleDepartmentNavigator keepCurrentPath="true" />
+ <!--<vtex.cmc:searchNavigator/> -->
 
                     
                      <div id="departament-navegador">
@@ -120,5 +122,28 @@
      <script type="text/javascript" src="/arquivos/QD-Infinity-Scroll.js"></script>
      <script>
          $(".prateleira[id*=ResultItems]").QD_infinityScroll();
+
+         setTimeout(function(){
+
+            $(".prateleira .buy-button-qtd .btn-add-buy-button-asynchronous").prepend('<img src="/arquivos/btncart.png"  style=""/>');
+            $(".sidebar").append($("#admake-advanced-filter"));
+         }, 1000)
+
+         
+
+setTimeout(function(){
+    $("#admake-advanced-filter > .box-filtro h3").append(`<span class="caret" style="margin-left:16px"></span>`);
+
+    $("#admake-advanced-filter .opcoes").hide();
+    
+    $("#admake-advanced-filter > .box-filtro h3").toggle(function() {
+        let me = $(this).text().toLowerCase();
+        $(`#admake-advanced-filter > .box-filtro.filtro-${me} .opcoes`).slideDown();
+    }, function() {
+        let me = $(this).text().toLowerCase();
+        $(`#admake-advanced-filter > .box-filtro.filtro-${me} .opcoes`).slideUp();
+    })
+}, 1000)
+
      </script>
  </html>

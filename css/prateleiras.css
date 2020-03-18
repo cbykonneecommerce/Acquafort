@@ -9,9 +9,13 @@
 
 .prateleira .box-item {
     text-align: left !important;
+    height: 484px;
 }
 .prateleira .box-item:hover img {
     opacity: 1;
+}
+.prateleira .product-name {
+    margin-bottom: 1em;
 }
 
 .product-image::after {
@@ -30,17 +34,19 @@
 }
 .buy-button-qtd .amount-in-cart {
     display: inline-block;
-    width: 61px;
+    width: 71px;
     text-align: center;
     margin-right: 1em;
     height: 3em;
-    border: solid 1px #5062C2 !important;
+    border: solid 2px #5062C2 !important;
     border-radius: 10px;
 }
 
 .wrapper-buy-button-asynchronous {
     display: inline-block;
 }
+
+
 .prateleira .buy-button-qtd .btn-add-buy-button-asynchronous {
     font-family: 'Open Sans' !important;
     font-weight: bold;
@@ -49,6 +55,10 @@
     border-radius: 11px !important;
 }
 
+.prateleira .buy-button-qtd .btn-add-buy-button-asynchronous img {
+    width: 21px;
+    margin-right: 7px;
+}
 
 .prateleira .btn-add-buy-button-asynchronous .fa-lock {
     display: none !important;
@@ -64,4 +74,25 @@
     font-family: 'Open Sans' !important;
     color: #5062C2 !important;
     margin-bottom: 5px;
+}
+
+@media (min-width: 1700px) {
+  
+    .prateleira .buy-button-qtd .btn-add-buy-button-asynchronous {
+        width: 223px;
+        font-size: 20px;
+    }
+    
+    .prateleira .buy-button-qtd .btn-add-buy-button-asynchronous img {
+        width: 27px;
+        margin-right: 10px;
+    }
+    .buy-button-qtd .amount-in-cart {
+        width: 71px;
+        text-align: center;
+        margin-right: 1em;
+        height: 3.4em;
+        margin-top: -6px;
+    }
+    
 }

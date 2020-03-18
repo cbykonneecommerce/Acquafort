@@ -1,4 +1,4 @@
-.menu-departamento{
+.menu-departamentos{
 font-family: Arial !important;
 }
 
@@ -49,7 +49,7 @@ font-family: Arial !important;
     margin-right: 16px;
 }
 
-.menu-departamento {
+.menu-departamentos {
     display: block !important;
     overflow: visible !important;
 }
@@ -87,9 +87,9 @@ font-family: Arial !important;
     font-size: 18px;
 }
 
-#admake-advanced-filter {
+/*#admake-advanced-filter {
     display: none !important;
-}
+}*/
 
 .deptonav {
     background-color: #05488A;
@@ -112,7 +112,7 @@ font-family: Arial !important;
 
 .deptonav#todas li a {
     color: black;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -125,10 +125,9 @@ font-family: Arial !important;
 }
 
 .deptonav#todas li {
-    margin-bottom: 1em;
     margin-top: 1em;
-    padding-left: 2em;
-    padding: 11px;
+    margin-bottom: 10px !important;
+    padding: 4px;
 }
 
 .deptonav#todas li:hover {
@@ -296,4 +295,13 @@ font-family: Arial !important;
         width: 25% !important;
         margin-left: 15px !important;
     }
+}
+
+
+@media (min-width: 1200px) {
+.header .search .btn-buscar {
+    width: 5%;
+    /* padding-left: 1em; */
+    margin-left: 22px;
+}
 }
