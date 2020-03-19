@@ -230,7 +230,35 @@ font-family: Arial !important;
     color: #1C4175
 }
 
+.ui-autocomplete {
+    width: 833px ! important;
+    z-index: 9999999999999999999 !important;
+}
 
+
+.vtexIdUI .vtexIdUI-heading {
+    font-weight: bold;
+    color: #1C4175;
+}
+
+#vtexIdContainer {
+    background-color: #1C4175;
+    opacity: 0.9;
+}
+
+
+#classicLoginBtn {
+    width: 9em;
+    background-color: #1C4175 !important;
+    text-shadow: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+
+.vtexIdUI label {
+    font-weight: bold;
+}
 @media screen and (max-width: 1700px) {
     #storenav li {
       /*  margin-left: 0.1em;
@@ -244,6 +272,9 @@ font-family: Arial !important;
     .header .search .btn-buscar {
         border-radius: 26px;
         width: 18%;
+    }
+    .ui-autocomplete {
+        width: 320px ! important
     }
 
     .header .container-fluid {
