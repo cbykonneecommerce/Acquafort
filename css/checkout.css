@@ -1,7 +1,15 @@
 *{
-    font-family: Arial !important
+    font-family: Arial;
 }
 
+
+.container-main.container-cart {
+  padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+body {
+  padding: 0px !important;
+}
 .accordion-toggle{
     color: #1A4176 !important;
     font-weight: 600;
@@ -126,7 +134,7 @@ input {
     border-top: none !important;
 }
 
-#payment-data-submit i ,.cart-items .quantity {
+#payment-data-submit i  {
     display: none;
 }
 
@@ -187,4 +195,306 @@ table.table, .mini-cart .summary-template-holder{
 
 #edit-profile-data i, .link-box-edit i {
   display: block !important;
+}
+
+
+
+th.product, th.shipping-date, th.product-price, th.quantity-price, th.quantity {
+    font-size: 16px;
+    color: #454545;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+
+.cart {
+    border: solid 2px #D6D6D6;
+    border-radius: 15px;
+  margin-bottom: 3em !important;
+  padding: 4px;
+}
+
+.cart thead {
+    border-bottom: solid 2px #D6D6D6;
+}
+
+
+#cart-title{
+  display:none !important;
+}
+
+.container-cart {
+  margin-top:6em
+}
+
+table thead:first-child tr:first-child th {
+  height: 2em;
+    vertical-align: inherit
+}
+
+#shipping-preview-container .srp-content .srp-main-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #474747;
+}
+tbody {
+
+}
+
+td a {
+    color: #4F4F4F;
+}
+
+.product-image img {
+    color: transparent;
+    height: 70px;
+    max-width: 70px;
+    width: 70px;
+    border: solid 2px #95DFF0;
+    padding: 3px;
+    border-radius: 15px;
+}
+
+.quantity-price .total-selling-price {
+    font-weight: bold;
+    color: #454545;
+}
+
+.icon.icon-remove.item-remove-ico {
+    color: #35C8E7;
+}
+
+.onda-v1 .f3 {
+  color: #333;
+
+}
+
+.link-choose-more-products {
+    font-size: 18px;
+    padding: 12px;
+    color: #4F4F4F;
+    border-radius: 25px;
+    font-size: 17px;
+    font-family: Arial;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 26px;
+    border-radius: 25px;
+    border: solid 2px #D6D6D6;
+    padding-left: 41px;
+    padding-top: 12px;
+    padding-right: 41px;
+}
+
+.btn-place-order {
+  font-size: 17px;
+    background-color: #194176 !important;
+    text-shadow: none !important;
+    background-image: none !important;
+    border-color: transparent !important;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 26px;
+    border-radius: 25px;
+    box-shadow: none;
+    border: none;
+    padding-left: 41px;
+    padding-top: 12px;
+    padding-right: 41px;
+}
+
+.coupon-label label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #474747;
+}
+
+#cart-coupon {
+    box-shadow: none !important
+}
+
+#cart-coupon-add {
+    font-size: 17px;
+    background-color: #194176!important;
+    text-shadow: none !important;
+    background-image: none !important;
+    border-color: transparent !important;
+    font-family: sans-serif;
+    font-weight: 500;
+    line-height: 22px;
+    border-radius: 25px;
+    box-shadow: none;
+    border: none;
+    color: white;
+    margin-left: -26px;
+}
+
+
+.srp-delivery-select-container .srp-delivery-current-many {
+    border-color: transparent !important;
+    border: solid 2px #D6D6D6 !important;
+    border-radius: 22px;
+}
+
+.srp-delivery-current-many__description .srp-delivery-current-many__text .srp-delivery-current-many__name  {
+    color: #454545 !important;
+    font-weight: 700 !important;
+}
+
+.srp-address-title  {
+      color: #5062C2 !important;
+    font-weight: 800;
+}
+
+tfoot {
+  
+  background-color:#F2F2F2;
+}
+
+tfoot tr{
+  color: #2F6CA7;
+    font-weight: 700;
+}
+
+
+.full-cart .summary-totalizers .info {
+    text-align: left;
+    padding-left: 2em;
+  font-size: 16px;
+}
+
+
+.quantity input {
+  
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.srp-delivery-header span strong {
+  font-weight: 500;
+}
+
+
+.link-coupon-add {
+    color: #fff!important;
+    font-weight: 200;
+    font-size: 20px;
+    border: solid 1px #194176;
+    border-radius: 25px;
+    padding: 12px;
+    background-color: #194176;
+}
+
+
+
+.srp-main-title .srp-data {
+  margin-top: 2em
+}
+
+
+
+.summary-template-holder .accordion-inner {
+    padding: 0;
+    margin-top: 3em;
+}
+
+
+.onda-v1 .b--light-gray {
+    border-color: transparent !important;
+}
+
+.srp-main-title  {
+      color: #333;
+}
+
+
+
+
+
+@media screen and (max-width: 660px) { 
+    .product-image img {
+    color: transparent;
+    height: 45px;
+    max-width: 45px;
+    width: 45px;
+}
+ 
+  
+  
+ .full-cart .cart table tbody tr td.quantity {
+  border: solid 1px #5062C2;
+    border-radius: 25px;
+  padding-left: 6px;
+    padding-right: 6px;
+}
+ .new-product-price {
+    color: #5062C2;
+    font-weight: 200;
+  }
+  
+  .full-cart .cart table tbody {
+    border-top: none;
+    border: solid 1px #E0E0E0;
+    border-radius: 10px;
+  }
+  
+  .srp-main-title {
+    color:#2F6CA7
+    
+  }
+  
+  .link-coupon-add {
+    font-size: 14px;
+    float: left;
+    color: #2F6CA7;
+    text-decoration: underline;
+    border: none;
+  }
+  
+  #cart-choose-more-products {
+    display: none;
+  }
+  
+  .full-cart .summary-totalizers .info {
+    text-align: right;
+  }
+  
+  tbody {
+    border: none;
+    border-top: none;
+}
+  
+  tfoot {
+    border: none;
+    background-color: white;
+}
+  
+  .btn-place-order {
+        background-color: #00506D !important;
+    color: #8BCEE6;
+      padding-left: 31px;
+    padding-top: 12px;
+    /* text-align: center; */
+    padding-right: 31px;
+    width: 60% !important;
+  }
+  
+  .cart-links-bottom {
+    
+    margin-left: 12%;
+}
+
+  
+  .col-pague-com, .col-seguranca {
+    display: block !important;
+        width: 100% !important;
+    text-align: center;
+  }
+  
+  .container-cart {
+    margin-top: 2em;
+}
+
 }

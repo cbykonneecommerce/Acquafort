@@ -195,6 +195,7 @@ font-family: Arial !important;
     color: transparent !important;
     outline-style: none;
     box-shadow: none;
+    width: 29px !important;
     border: none !important;
     background-color: white !important;
     /* border-radius: 0px 40px 40px 0px !important*/
@@ -238,16 +239,16 @@ font-family: Arial !important;
 
 .vtexIdUI .vtexIdUI-heading {
     font-weight: bold;
-    color: #1C4175;
+    color: #1C4175 !important;
 }
 
 #vtexIdContainer {
-    background-color: #1C4175;
+    background-color: #1C4175 !important;
     opacity: 0.9;
 }
 
 
-#classicLoginBtn {
+#classicLoginBtn, .vtexIdUI .btn-success {
     width: 9em;
     background-color: #1C4175 !important;
     text-shadow: none !important;
@@ -255,6 +256,21 @@ font-family: Arial !important;
     box-shadow: none !important;
 }
 
+.vtex-account__user-name {
+    color: #4751BA;
+    font-weight: bold;
+}
+
+.btn-open-menu-xs .fa.fa-bars {
+    color: #1A4175 !important;
+}
+.vtex-account__menu-links {
+    border-bottom: solid 1px lightgray;
+}
+
+.vtex-account__menu {
+    border-right: solid 1px lightgray;
+}
 
 .vtexIdUI label {
     font-weight: bold;

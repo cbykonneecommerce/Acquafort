@@ -24,10 +24,7 @@
 
 }
 
-#carouselpropostas .owl-item {
-    margin-left: 1.5em;
 
-}
 #propostas {
     background-color: #DEE3E6;
     color: #444444;
@@ -191,7 +188,6 @@
 
 #carouselpropostas .item {
     margin-left: 3em;
-    margin-top: 2em;
 }
 
 #carouselmarcas .item {
@@ -256,6 +252,24 @@
 }
 #depoimentos p {
     margin-bottom: 4em;
+}
+
+
+.prateleira .box-item {
+    height: auto !important;
+}
+
+.showcase-default h2 {
+    display: none;
+}
+
+#home-content .owl-carousel .owl-item li{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.prateleira.vitrine > ul {
+    margin-left: 0px !important;
 }
 
 @media screen and (max-width: 1700px) {

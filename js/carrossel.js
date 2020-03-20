@@ -35,7 +35,7 @@ $("#carouselpropostas").owlCarousel({
     items : 2,
     itemsDesktop : [1199,5],
     itemsDesktopSmall : [979,2],
-    itemsMobile : [479,1],
+    itemsMobile : [479,2],
     navigation: true,
     stopOnHover: true
 
