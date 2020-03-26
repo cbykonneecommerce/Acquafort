@@ -176,6 +176,7 @@
     border-right-color: transparent;
     border-bottom-color: transparent;
     border-width: thin;
+    height: 172px;
 }
 
 .grid-ending {
@@ -218,16 +219,15 @@
 
 .section-title {
     margin-bottom: 1em;
-    margin-left: 0.8em;
 }
 
 .marca-nav, .destaques-display, #colecoes, #preco-baixo {
     margin-top: 2em;
 }
-#carouselmarcas .owl-controls .owl-buttons > div.owl-prev {
+#home-content .owl-controls .owl-buttons > div.owl-prev {
     margin-left: -7em;
 }
-#carouselmarcas .owl-controls .owl-buttons > div.owl-next {
+#home-content .owl-controls .owl-buttons > div.owl-next {
     margin-right: -7em;
 }
 
@@ -274,10 +274,10 @@
 
 @media screen and (max-width: 1700px) {
 
-    #carouselmarcas .owl-controls .owl-buttons > div.owl-prev {
+    #home-content .owl-controls .owl-buttons > div.owl-prev {
         margin-left: -4em;
     }
-    #carouselmarcas .owl-controls .owl-buttons > div.owl-next {
+    #home-content .owl-controls .owl-buttons > div.owl-next {
         margin-right: -4em;
     }
 
@@ -286,9 +286,13 @@
     }
 
     .content a span {
-        font-size: 11px;
+        font-size: 15px;
     }
-    
+
+    .depto-nav .col-sm-2 {
+        height: 185px;
+    }
+
     
   }
 
@@ -330,7 +334,7 @@
 
       @media screen and (min-width: 1900px) {
         .colection-description-box{
-            width: 37.2em;
+            width: 100%
         }
       }
 

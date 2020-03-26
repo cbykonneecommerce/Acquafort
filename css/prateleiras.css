@@ -15,7 +15,7 @@
 }
 .prateleira .box-item {
     text-align: left !important;
-    height: 484px;
+    height: 425px !important;
 }
 .prateleira .box-item:hover img {
     opacity: 1;
@@ -40,12 +40,16 @@
 }
 .buy-button-qtd .amount-in-cart {
     display: inline-block;
-    width: 71px;
-    text-align: center;
-    margin-right: 1em;
-    height: 3em;
     border: solid 2px #5062C2 !important;
     border-radius: 10px;
+    width: 54px;
+    text-align: center;
+    margin-right: 10px;
+    height: 2.45em;
+    margin-top: -6px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #444;
 }
 
 .wrapper-buy-button-asynchronous {
@@ -59,6 +63,7 @@
     text-transform: uppercase;
     background-color: #5062C2 !important;
     border-radius: 11px !important;
+    width: 155px;
 }
 
 .prateleira .buy-button-qtd .btn-add-buy-button-asynchronous img {
@@ -79,14 +84,14 @@
     font-size: 25px !important;
     font-family: 'Open Sans' !important;
     color: #5062C2 !important;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
 }
 
 @media (min-width: 1700px) {
   
     .prateleira .buy-button-qtd .btn-add-buy-button-asynchronous {
-        width: 223px;
-        font-size: 20px;
+        width: 155px;
+    font-size: 19px
     }
     
     .prateleira .buy-button-qtd .btn-add-buy-button-asynchronous img {
@@ -94,11 +99,14 @@
         margin-right: 10px;
     }
     .buy-button-qtd .amount-in-cart {
-        width: 71px;
+        width: 54px;
         text-align: center;
         margin-right: 1em;
-        height: 3.4em;
+        height: 2.85em;
         margin-top: -6px;
+        font-size: 17px;
+        font-weight: bold;
+        color: #444;
     }
     
 }

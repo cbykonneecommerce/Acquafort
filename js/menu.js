@@ -6,7 +6,7 @@ $(".depto-todas").hover(()=>{
   //  $(".deptonav:not(:first-child)").css( "margin-left", "0" );
 }, 
 ()=>{
-    $(".depto-todas#todas").hide();
+   // $(".depto-todas#todas").hide();
   //  $(".deptonav:not(:first-child)").css( "margin-left", "0" );
 })
 
@@ -19,6 +19,7 @@ $("#storenav .depto-aquecedores").mouseenter(function() {
 
 $(".depto-aquecedores#aquecedores").mouseleave(function() {
     $(".depto-aquecedores#aquecedores").hide()
+    $(".depto-todas#todas").hide();
 });
 
 
@@ -30,6 +31,7 @@ $("#storenav .depto-iluminacao").mouseenter(function() {
 
 $(".depto-iluminacao#iluminacao").mouseleave(function() {
     $(".depto-iluminacao#iluminacao").hide()
+    $(".depto-todas#todas").hide();
 });
 
 
@@ -37,11 +39,13 @@ $(".depto-iluminacao#iluminacao").mouseleave(function() {
 $("#storenav .depto-eletrico").mouseenter(function() {
     $(".deptonav").hide();
     $(".depto-eletrico#eletrico").show()
+    
 });
 
 
 $(".depto-eletrico#eletrico").mouseleave(function() {
     $(".depto-eletrico#eletrico").hide()
+    $(".depto-todas#todas").hide();
 });
 
 
@@ -53,6 +57,7 @@ $("#storenav .depto-hidraulico").mouseenter(function() {
 
 $(".depto-hidraulico#hidraulico").mouseleave(function() {
     $(".depto-hidraulico#hidraulico").hide()
+    $(".depto-todas#todas").hide();
 });
 
 
@@ -65,6 +70,7 @@ $("#storenav .depto-incendio").mouseenter(function() {
 
 $(".depto-incendio#incendio").mouseleave(function() {
     $(".depto-incendio#incendio").hide()
+    $(".depto-todas#todas").hide();
 });
 
 
@@ -174,12 +180,13 @@ $(".depto-ventilador").hover(()=>{
 
 
 
-$(".depto-todas#todas ul").on('click', 'li', function(e) {
+$(".depto-todas#todas ul").on('hover', 'li', function(e) {
+    $('.deptonav:not(#todas)').hide();
     let myClass = $(this).attr("class");
-    $(".depto-todas#todas").hide();
     $(`.${myClass}#${myClass.split("-")[1]}`).show();
     $(`.${myClass}#${myClass.split("-")[1]}`).mouseleave(function() {
-        $(`.${myClass}#${myClass.split("-")[1]}`).hide();
+        //$(`.${myClass}#${myClass.split("-")[1]}`).hide();
+        $('.deptonav:not(#todas)').hide();
       });
  });
 

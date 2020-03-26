@@ -7,191 +7,191 @@
  *
  -->
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
-  xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
-
-<head>
-  <title>Orçamento</title>
-  <vtex:metaTags />
-  <vtex:template id="commonStyles" />
-  <link rel="stylesheet" href="/arquivos/orcamento.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-</head>
-
-<body id="orcamento-page">
-
-  <div class="page">
-
-    <!--  SubTemplate: Header -->
-    <vtex:template id="Header" />
-    <!-- /SubTemplate: Header -->
-
-    <div id="institucional-extra-top"></div>
-    <section class="container-fluid" style="padding-right: 0px; padding-left: 0px;">
-      <img src="/arquivos/orcamento-banner.png" alt="" />
-    </section>
-
-    <section id="institucional-content" class="container-fluid" style="padding-right: 8em;padding-left: 8em;color: #4F4F4F;">
-      <div class="row">
-        <div class="col-sm-7">
-          <h3 id="titleh3">Solicite aqui seu <span style="font-weight: bold;color: #51A7D2;">Orçamento fácil Acquafort</span></h3>
-          <p>É muito simples, em apenas dois passos você nos informa tudo o que precisa.</p>
-          <p>Em menos de 48 horas,nós entraremos em contato com os valores de sua solicitação</p>
-        </div>
-      </div>
-      <div class="row" style="margin-top: 2em;">
-        <div class="col-md-4 form-box" style=" border: solid 1px #BFBFBF; border-radius: 15px;">
-          <span>1</span>
-          <h3> Dados pessoais</h3>
-          <p>Solicitamos apenas informações essenciais para a realização da compra</p>
-
-          <form style="padding-bottom: 2em;">
-
-            <div class="form-group" style="margin-top: 1.5em;">
-              <label for="formGroupExampleInput">E-mail *</label>
-              <input type="text" class="form-control" id="email" placeholder="Seu E-mail" />
-            </div>
-            <div class="row" style="margin-top: 1.5em;">
-              <div class="col-sm-6">
-                <label>Primeiro nome *</label>
-                <input type="text" class="form-control" placeholder="Nome" id="primeironome" />
-              </div>
-              <div class="col-sm-6">
-                <label>Sobrenome</label>
-                <input type="text" class="form-control" placeholder="Sobrenome" id="sobrenome" />
-              </div>
-            </div>
-            <div class="row" style="margin-top: 1.5em;">
-              <div class="col-sm-6">
-                <label>CPF</label>
-                <input type="text" class="form-control" placeholder="CPF/CNPJ" id="cpf" />
-              </div>
-              <div class="col-sm-6">
-                <label>Telefone</label>
-                <input type="text" class="form-control" placeholder="Telefone" id="telefone"/>
-              </div>
-            </div>
-            <div class="form-group" style="margin-top: 2em;">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck" style="margin-top: -1px;margin-right: 5px;" />
-                <label class="form-check-label" for="gridCheck">
-                  Incluir dados de Pessoa jurídica
-                </label>
-              </div>
-            </div>
-
-            <div class="onlycompanies" style="    margin-bottom: 3em;">
-              <div class="form-group" style="margin-top: 1.5em;">
-                <label for="formGroupExampleInput">Razão Social</label>
-                <input type="text" class="form-control" id="razaosocial" placeholder="Razão Social" />
-              </div>
-              <div class="form-group" style="margin-top: 1.5em;">
-                <label for="formGroupExampleInput">Nome Fantasia</label>
-                <input type="text" class="form-control" id="nomefanta" placeholder="Nome Fantasia" />
-              </div>
-
-              <div class="row" style="margin-top: 1.5em;">
-                <div class="col-sm-6">
-                  <label>Inscrição Estadual</label>
-                  <input type="text" class="form-control" placeholder="Inscrição Estadual" id="inscrest" />
-                </div>
-                <div class="col-sm-6">
-                  <label>CNPJ</label>
-                  <input type="text" class="form-control" maxlength="18" placeholder="CNPJ" id="cnpj" />
-                </div>
-              </div>
-            </div>
-            <div class="row" style="text-align: center">
-              <button class="orcamentoButton">Ir para listagem</button>
-            </div>
-            
-          </form>
-
-          
-          
-        </div>
-
-
-        <div class="col-md-7 form-box" style=" border: solid 1px #BFBFBF; border-radius: 15px;">
-          <span>2</span>
-          <h3> De quais materiais você precisa?</h3>
-          <p>Solicitamos apenas informações essenciais para a realização da compra</p>
-
-          <div class="row" style="margin-bottom: 2em;
-          padding-bottom: 2em;
-          margin: 15px;">
-            <div class="col-md-6" style="margin-top: -2em;">
-              <h3 style="margin-left: 0px" class="inner-forms-title">Nos envie seu arquivo</h3>
-              <p>Você pode enviar uma foto, planilha ou um arquivo de texto contendo sua listagem</p>
-              <small>Arquivos no formato xlsx, docx, pdf, jpg, png e bmp limitados a <b>2MB</b></small>
-            </div>
-            <div class="col-sm-6">
-              <img src="/arquivos/file-img.png" />
-              <button class="orcamentoButton" id="file-search" onclick="document.getElementById('getFile').click()">Procurar arquivo</button>
-  <input type='file' id="getFile" style="display:none" />
-            </div>
-
-
-          </div>
-          <div class="row" style="border-top: solid 1px #F0F0F0;margin-top: 2em;padding-top: 2em;margin: 15px;">
-            <div class="col-md-6" style="margin-top: -2em;">
-              <h3 style="margin-left: 0px" class="inner-forms-title">Ou digite seus itens aqui:</h3>
-
-              <p>Para cada material citado, se possível, nos informe as devidas quantidades, especificações, medidas e
-                marcas de preferência.</p>
-            </div>
-            <div class="col-md-6">
-              <textarea rows="5" cols="33" style="border-radius: 15px;" id="listatext">
-
-              </textarea>
-            </div>
-
-          </div>
-          <div class="row" style="border-top: solid 1px #F0F0F0;margin-top: 2em;padding-top: 2em;margin: 15px;">
-            <div class="col-md-12" style="padding-bottom: 2em;">
-              <b style="display: block; margin-bottom: 2em;">O que considera mais importante na escolha de um produto?</b>
-
-
-              <label class="checkbox-inline">
-                <input name="consideracao" type="checkbox" id="inlineCheckbox1" value="Marca de preferência" /> Marca de preferência
-              </label>
-              <label class="checkbox-inline">
-                <input name="consideracao" type="checkbox" id="inlineCheckbox2" value="Qualidade" /> Qualidade
-              </label>
-              <label class="checkbox-inline">
-                <input name="consideracao" type="checkbox" id="inlineCheckbox3" value="Custo x Benefício" /> Custo x Benefício
-              </label>
-              <label class="checkbox-inline">
-                <input name="consideracao" type="checkbox" id="inlineCheckbox4" value="Preço" /> Preço
-              </label>
-
-              
-            </div>
-
-          </div>
-
-          <div class="row" style="text-align: center;margin-bottom: 2em;">
-            <button class="orcamentoButton" id="done-button">Enviar Orçamento</button>
-          </div>
-
-        </div>
-      </div>
-
-      <img src="/arquivos/propostas-orc.png" style="max-width: 100%;margin-bottom: 1em; margin-top: 2em;"/>
-    </section><!-- #content -->
-
-    <div id="institucional-extra-bottom"></div>
-
-    <!--  SubTemplate: Footer -->
-    <vtex:template id="Footer" />
-    <!-- /SubTemplate: Footer -->
-
-  </div><!-- .container-fluid -->
-
-</body>
-<vtex:template id="commonScripts" />
-<script src="/arquivos/orcamento.js"></script>
-
-</html>
+ <!DOCTYPE html>
+ <html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+   xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+ 
+ <head>
+   <title>Orçamento</title>
+   <vtex:metaTags />
+   <vtex:template id="commonStyles" />
+   <link rel="stylesheet" href="/arquivos/orcamento.css" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+ </head>
+ 
+ <body id="orcamento-page">
+ 
+   <div class="page">
+ 
+     <!--  SubTemplate: Header -->
+     <vtex:template id="Header" />
+     <!-- /SubTemplate: Header -->
+ 
+     <div id="institucional-extra-top"></div>
+     <section class="container-fluid" style="padding-right: 0px; padding-left: 0px;">
+       <img src="/arquivos/orcamento-banner.png" alt="" />
+     </section>
+ 
+     <section id="institucional-content" class="container" style="color: #4F4F4F;">
+       <div class="row">
+         <div class="col-sm-7">
+           <h3 id="titleh3">Solicite aqui seu <span style="font-weight: bold;color: #51A7D2;">Orçamento fácil Acquafort</span></h3>
+           <p>É muito simples, em apenas dois passos você nos informa tudo o que precisa.</p>
+           <p>Em menos de 48 horas,nós entraremos em contato com os valores de sua solicitação</p>
+         </div>
+       </div>
+       <div class="row" style="margin-top: 2em;">
+         <div class="col-md-4 form-box" style=" border: solid 1px #BFBFBF; border-radius: 15px;">
+           <span>1</span>
+           <h3> Dados pessoais</h3>
+           <p>Solicitamos apenas informações essenciais para a realização da compra</p>
+ 
+           <form style="padding-bottom: 2em;">
+ 
+             <div class="form-group" style="margin-top: 1.5em;">
+               <label for="formGroupExampleInput">E-mail *</label>
+               <input type="text" class="form-control" id="email" placeholder="Seu E-mail" />
+             </div>
+             <div class="row" style="margin-top: 1.5em;">
+               <div class="col-sm-6">
+                 <label>Primeiro nome *</label>
+                 <input type="text" class="form-control" placeholder="Nome" id="primeironome" />
+               </div>
+               <div class="col-sm-6">
+                 <label>Sobrenome</label>
+                 <input type="text" class="form-control" placeholder="Sobrenome" id="sobrenome" />
+               </div>
+             </div>
+             <div class="row" style="margin-top: 1.5em;">
+               <div class="col-sm-6">
+                 <label>CPF</label>
+                 <input type="text" class="form-control" placeholder="CPF/CNPJ" id="cpf" />
+               </div>
+               <div class="col-sm-6">
+                 <label>Telefone</label>
+                 <input type="text" class="form-control" placeholder="Telefone" id="telefone"/>
+               </div>
+             </div>
+             <div class="form-group" style="margin-top: 2em;">
+               <div class="form-check">
+                 <input class="form-check-input" type="checkbox" id="gridCheck" style="margin-top: -1px;margin-right: 5px;" />
+                 <label class="form-check-label" for="gridCheck">
+                   Incluir dados de Pessoa jurídica
+                 </label>
+               </div>
+             </div>
+ 
+             <div class="onlycompanies" style="    margin-bottom: 3em;">
+               <div class="form-group" style="margin-top: 1.5em;">
+                 <label for="formGroupExampleInput">Razão Social</label>
+                 <input type="text" class="form-control" id="razaosocial" placeholder="Razão Social" />
+               </div>
+               <div class="form-group" style="margin-top: 1.5em;">
+                 <label for="formGroupExampleInput">Nome Fantasia</label>
+                 <input type="text" class="form-control" id="nomefanta" placeholder="Nome Fantasia" />
+               </div>
+ 
+               <div class="row" style="margin-top: 1.5em;">
+                 <div class="col-sm-6">
+                   <label>Inscrição Estadual</label>
+                   <input type="text" class="form-control" placeholder="Inscrição Estadual" id="inscrest" />
+                 </div>
+                 <div class="col-sm-6">
+                   <label>CNPJ</label>
+                   <input type="text" class="form-control" maxlength="18" placeholder="CNPJ" id="cnpj" />
+                 </div>
+               </div>
+             </div>
+             <div class="row" style="text-align: center">
+               <button class="orcamentoButton">Ir para listagem</button>
+             </div>
+             
+           </form>
+ 
+           
+           
+         </div>
+ 
+ 
+         <div class="col-md-7 form-box" style=" border: solid 1px #BFBFBF; border-radius: 15px;">
+           <span>2</span>
+           <h3> De quais materiais você precisa?</h3>
+           <p>Solicitamos apenas informações essenciais para a realização da compra</p>
+ 
+           <div class="row" style="margin-bottom: 2em;
+           padding-bottom: 2em;
+           margin: 15px;">
+             <div class="col-md-6" style="margin-top: -2em;">
+               <h3 style="margin-left: 0px" class="inner-forms-title">Nos envie seu arquivo</h3>
+               <p>Você pode enviar uma foto, planilha ou um arquivo de texto contendo sua listagem</p>
+               <small>Arquivos no formato xlsx, docx, pdf, jpg, png e bmp limitados a <b>2MB</b></small>
+             </div>
+             <div class="col-sm-6">
+               <img src="/arquivos/file-img.png" />
+               <button class="orcamentoButton" id="file-search" onclick="document.getElementById('getFile').click()">Procurar arquivo</button>
+   <input type='file' id="getFile" style="display:none" />
+             </div>
+ 
+ 
+           </div>
+           <div class="row" style="border-top: solid 1px #F0F0F0;margin-top: 2em;padding-top: 2em;margin: 15px;">
+             <div class="col-md-6" style="margin-top: -2em;">
+               <h3 style="margin-left: 0px" class="inner-forms-title">Ou digite seus itens aqui:</h3>
+ 
+               <p>Para cada material citado, se possível, nos informe as devidas quantidades, especificações, medidas e
+                 marcas de preferência.</p>
+             </div>
+             <div class="col-md-6">
+               <textarea rows="5" cols="33" style="border-radius: 15px;" id="listatext">
+ 
+               </textarea>
+             </div>
+ 
+           </div>
+           <div class="row" style="border-top: solid 1px #F0F0F0;margin-top: 2em;padding-top: 2em;margin: 15px;">
+             <div class="col-md-12" style="padding-bottom: 2em;">
+               <b style="display: block; margin-bottom: 2em;">O que considera mais importante na escolha de um produto?</b>
+ 
+ 
+               <label class="checkbox-inline">
+                 <input name="consideracao" type="checkbox" id="inlineCheckbox1" value="Marca de preferência" /> Marca de preferência
+               </label>
+               <label class="checkbox-inline">
+                 <input name="consideracao" type="checkbox" id="inlineCheckbox2" value="Qualidade" /> Qualidade
+               </label>
+               <label class="checkbox-inline">
+                 <input name="consideracao" type="checkbox" id="inlineCheckbox3" value="Custo x Benefício" /> Custo x Benefício
+               </label>
+               <label class="checkbox-inline">
+                 <input name="consideracao" type="checkbox" id="inlineCheckbox4" value="Preço" /> Preço
+               </label>
+ 
+               
+             </div>
+ 
+           </div>
+ 
+           <div class="row" style="text-align: center;margin-bottom: 2em;">
+             <button class="orcamentoButton" id="done-button">Enviar Orçamento</button>
+           </div>
+ 
+         </div>
+       </div>
+ 
+       <img src="/arquivos/propostas-orc.png" style="max-width: 100%;margin-bottom: 1em; margin-top: 2em;"/>
+     </section><!-- #content -->
+ 
+     <div id="institucional-extra-bottom"></div>
+ 
+     <!--  SubTemplate: Footer -->
+     <vtex:template id="Footer" />
+     <!-- /SubTemplate: Footer -->
+ 
+   </div><!-- .container-fluid -->
+ 
+ </body>
+ <vtex:template id="commonScripts" />
+ <script src="/arquivos/orcamento.js"></script>
+ 
+ </html>

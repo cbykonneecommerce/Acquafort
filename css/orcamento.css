@@ -42,6 +42,9 @@ label{
     margin-bottom: 10px !important;
 }
 
+textarea {
+    width: 100% !important;
+}
 .orcamentoButton {
     font-size: 17px;
     text-align: center;
@@ -50,7 +53,7 @@ label{
     font-weight: bolder;
     padding-left: 5em;
     padding-right: 5em;
-    width: 94%;
+    width: 88%;
     border: none;
     padding-top: 0.8em;
     padding-bottom: 0.8em;
@@ -81,12 +84,7 @@ label{
     margin-left: -10px;
 }
 
-@media screen and (min-width: 1700px) {
-    #file-search{
-        padding-left: 8.5em;
-        padding-right: 8.5em;
-    }
-}
+
 
 
 @media screen and (max-width: 1030px) {

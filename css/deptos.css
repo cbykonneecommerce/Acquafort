@@ -64,17 +64,17 @@ hr {
 
 #admake-advanced-filter > .box-filtro h3 {
     color: #4F4F4F !important;
-    font-size: 24px !important;
+    font-size: 20px !important;
     font-weight: bold !important;
     line-height: 35px !important;
 }
-@media (max-width: 1700px) {
+
   
     .sidebar h2, .filtros-ativos h2 {
-        font-size: 25px !important;
+        font-size: 22px !important;
     }
 
-}
+
 
 @media (max-width: 500px) {
   

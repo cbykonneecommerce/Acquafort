@@ -22,9 +22,6 @@ font-family: Arial !important;
 }
 
 
-.destaques-display .row h3 {
-    margin-left: 0.8em;
-}
 
 .menu-item-texto i {
     font-size: 20px;
@@ -46,7 +43,6 @@ font-family: Arial !important;
     float: right;
     font-size: 25px;
     margin-top: -5px;
-    margin-right: 16px;
 }
 
 .menu-departamentos {
@@ -84,7 +80,7 @@ font-family: Arial !important;
 }
 #storenav li a {
     color: black;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 /*#admake-advanced-filter {
@@ -97,12 +93,16 @@ font-family: Arial !important;
     position: absolute;
     z-index: 9999999;
     padding-right: 0px;
-    width: 100%
+    width: 80%;
+    margin-left: 20.9%;
+    height: 31.6em;
 }
 
 .deptonav#todas {
     background-color: transparent;
     padding: 0;
+    margin-left: 0 !important;
+    width: 100% !important;
 }
 
 .deptonav li a {
@@ -112,8 +112,9 @@ font-family: Arial !important;
 
 .deptonav#todas li a {
     color: black;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
+    text-decoration: none;
 }
 
 .deptonav#todas li:hover a {
@@ -188,14 +189,14 @@ font-family: Arial !important;
 }
 
 .btn-buscar {
-    background-image: url(/arquivos/lupa.png) !important;
+    background-image: url(/arquivos/newlupa.png) !important;
     background-repeat: no-repeat !important;
     background-size: contain;
     background-position: center center;
     color: transparent !important;
     outline-style: none;
     box-shadow: none;
-    width: 29px !important;
+    width: 38px !important;
     border: none !important;
     background-color: white !important;
     /* border-radius: 0px 40px 40px 0px !important*/
@@ -232,8 +233,14 @@ font-family: Arial !important;
 }
 
 .ui-autocomplete {
-    width: 833px ! important;
+    width: 552px ! important;
     z-index: 9999999999999999999 !important;
+}
+
+.ui-autocomplete .ui-menu-item a {
+    color: #777;
+    font-size: 18px !important;
+    line-height: 17px;
 }
 
 
@@ -275,6 +282,13 @@ font-family: Arial !important;
 .vtexIdUI label {
     font-weight: bold;
 }
+
+
+
+.deptonav#todas .row .col-sm-2 {
+    width: 19% !important;
+    margin-left: 32px !important;
+}
 @media screen and (max-width: 1700px) {
     #storenav li {
       /*  margin-left: 0.1em;
@@ -291,6 +305,10 @@ font-family: Arial !important;
     }
     .ui-autocomplete {
         width: 320px ! important
+    }
+    .ui-autocomplete .ui-menu-item a {
+      
+        font-size: 14px !important;
     }
 
     .header .container-fluid {
@@ -339,8 +357,18 @@ font-family: Arial !important;
 
 @media screen and (max-width: 1700px) {
     .deptonav#todas .row .col-sm-2 {
-        width: 25% !important;
+        width: 24% !important;
         margin-left: 15px !important;
+    }
+
+    .deptonav {
+        width: 75%;
+    margin-left: 24.5%;
+    } 
+
+    .deptonav#todas {
+        width: 100% !important;
+        margin-left: 0 !important;
     }
 }
 
