@@ -162,9 +162,6 @@ font-family: Arial !important;
     border: 2px solid #5062C2;
 }
 
-.numeros {
-    margin-bottom: 1em;
-}
 
 .numeros i {
     margin-left: -1em;
@@ -347,6 +344,11 @@ font-family: Arial !important;
     }
     .sidenav,.link-login a, .link-orders a {
         color: white !important;
+    }
+
+
+    .fulltext-search-box {
+        max-height: 40px;
     }
 
 

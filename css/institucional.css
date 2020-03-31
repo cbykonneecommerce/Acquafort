@@ -13,6 +13,14 @@
 #content-info h4{
     margin-top: 2em;
     margin-bottom: 2em;
+    font-size: 18px;
+    font-weight: bold;
+    color: #444;
+}
+
+#content-info h4 img{
+    max-width: 21px;
+    margin-left: 6px;
 }
 
 #content-info p{

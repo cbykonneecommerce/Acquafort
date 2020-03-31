@@ -13,6 +13,22 @@ hr {
     margin-bottom: 0px;
 }
 
+.carregar-prox-pg {
+    padding: 9px;
+    background-color: #38B7F8;
+    display: inline-block;
+    border-radius: 9px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    width: 147px;
+    /* margin-left: 13px; */
+    font-weight: 700;
+}
+
+.vitrine.resultItemsWrapper {
+    text-align: center;
+}
 .resultado-busca-filtro > fieldset select {
     border-radius: 20px !important;
     border: 1px solid #808080 !important;
@@ -22,6 +38,15 @@ hr {
 .orderBy label {
     font-weight: 300 !important;
     margin-right: 1em;
+}
+
+.filter-pill {
+    padding: 6px;
+    background-color: #D5D5D5;
+    display: inline-block;
+    border-radius: 9px;
+    font-size: 11px;
+    margin-left: 13px;
 }
 
 .compare, .main :last-child .resultado-busca-filtro {
@@ -74,7 +99,20 @@ hr {
         font-size: 22px !important;
     }
 
-
+    #returnToTop {
+        background-color: rgb(26, 65, 117) !important;
+        width: 74px !important;
+    height: 46px !important;
+    }
+    #returnToTop span {
+        font-weight: bold;
+        height: auto;
+        line-height: 18px !important;
+        color: white !important;
+    }
+    #returnToTop .arrowToTop {
+        display: none !important;
+    }
 
 @media (max-width: 500px) {
   

@@ -191,6 +191,10 @@ $(".depto-todas#todas ul").on('hover', 'li', function(e) {
  });
 
 
+ $(`.allmenus`).mouseleave(function() {
+    //$(`.${myClass}#${myClass.split("-")[1]}`).hide();
+    $('.deptonav').hide();
+  });
 
 
 

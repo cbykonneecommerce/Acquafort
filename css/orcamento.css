@@ -65,6 +65,7 @@ textarea {
     padding-right: 3em;
     margin-top: 8px;
     background-color: #00B8FB;
+    width: 100%;
 }
 
 #done-button {

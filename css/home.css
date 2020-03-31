@@ -3,27 +3,26 @@
     font-weight: bold;
 }
 
-#nav-grid, #bottomrow{
+#nav-grid, #bottomrow {
     text-align: center;
 }
 
-#underbanners .col-sm-8{
+#underbanners .col-sm-8 {
     margin-left: -28px;
 }
-#underbanners .col-sm-8 h5{
+
+#underbanners .col-sm-8 h5 {
     margin-bottom: 2px;
     font-weight: bold;
 }
 
-#carouselpropostas .item .col-xs-6 img{
+#carouselpropostas .item .col-xs-6 img {
     width: 34%;
 }
 
-#carouselpropostas .item .col-xs-6 h5{
+#carouselpropostas .item .col-xs-6 h5 {
     font-weight: bold;
-
 }
-
 
 #propostas {
     background-color: #DEE3E6;
@@ -31,6 +30,7 @@
     padding-bottom: 1em;
     padding-top: 1em;
 }
+
 .section-title img {
     margin-bottom: 7px;
     margin-right: 6px;
@@ -44,6 +44,7 @@
     color: #15363D;
     font-size: 18px;
 }
+
 .depto-nav #bottomrow {
     border-style: solid;
     border-color: #C8C8C8;
@@ -66,11 +67,11 @@
     color: #333;
 }
 
-.destaqueslist > li {
+.destaqueslist>li {
     margin-left: 5em;
 }
 
-.destaqueslist li span:hover , #dropdownMenu1{
+.destaqueslist li span:hover, #dropdownMenu1 {
     color: #38B7F8;
     font-weight: bold;
 }
@@ -78,6 +79,7 @@
 #dropdownMenu1 {
     font-size: 1em;
 }
+
 #dropdownMenu1 i {
     color: #828282;
     border-color: #808080;
@@ -90,26 +92,27 @@
     margin-left: 0.8em;
 }
 
-
-
 .colection-description-box {
     background-color: #5062C2;
     margin-top: -0.8em;
     padding-top: 1.5em;
     padding-left: 1.6em;
     border-radius: 0px 0px 10px 10px;
-    height: 8em;
+    height: 7em;
+    width: 92%;
 }
 
 .colection-description-box h5, .colection-description-box h3 {
     color: white;
-} 
+}
 
 .colection-description-box h3 {
     font-weight: bold;
 }
+
 .big-box img {
     border-radius: 10px 10px 0px 0px;
+    width: 92%;
 }
 
 .mini-box {
@@ -118,6 +121,8 @@
     border-width: thin;
     border-radius: 10px;
     text-align: center;
+    width: 167px;
+    margin: 18px 10px;
 }
 
 .mini-box img {
@@ -131,17 +136,18 @@
     padding-left: 1em;
     font-size: 1em;
 }
-.select-triangle, .destaques-shelf, .colection-item  {
+
+.select-triangle, .destaques-shelf, .colection-item {
     display: none;
 }
-.destaqueslist li span:hover + .select-triangle {
+
+.destaqueslist li span:hover+.select-triangle {
     display: block !important;
 }
 
 .owl-pagination {
     display: none;
 }
-
 
 .select-triangle {
     width: 0;
@@ -154,7 +160,7 @@
     margin-top: 0.7em;
 }
 
-.depto-nav #nav-grid{
+.depto-nav #nav-grid {
     border-style: solid;
     border-color: #C8C8C8;
     border-bottom-color: transparent;
@@ -182,24 +188,23 @@
 .grid-ending {
     border-right-color: transparent;
 }
+
 .grid-start {
     border-left-color: transparent !important;
 }
-
 
 #carouselpropostas .item {
     margin-left: 3em;
 }
 
 #carouselmarcas .item {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 10px;
-
 }
 
 .box-text img {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     margin-top: -5em;
     border-radius: 10px;
@@ -213,7 +218,7 @@
     padding-bottom: 1em;
 }
 
-.destaques-display .row{
+.destaques-display .row {
     margin-bottom: 1em;
 }
 
@@ -224,10 +229,12 @@
 .marca-nav, .destaques-display, #colecoes, #preco-baixo {
     margin-top: 2em;
 }
-#home-content .owl-controls .owl-buttons > div.owl-prev {
+
+#home-content .owl-controls .owl-buttons>div.owl-prev {
     margin-left: -7em;
 }
-#home-content .owl-controls .owl-buttons > div.owl-next {
+
+#home-content .owl-controls .owl-buttons>div.owl-next {
     margin-right: -7em;
 }
 
@@ -240,20 +247,20 @@
     height: 330px;
     margin-right: 0;
     margin-left: 0;
-
 }
 
 #carousel-depoimentos {
     margin-bottom: 1em;
 }
+
 #depoimentos h3 {
     margin-top: 2em;
     font-weight: bold;
 }
+
 #depoimentos p {
     margin-bottom: 4em;
 }
-
 
 .prateleira .box-item {
     height: auto !important;
@@ -263,42 +270,46 @@
     display: none;
 }
 
-#home-content .owl-carousel .owl-item li{
+#home-content .owl-carousel .owl-item li {
     margin-left: 1em;
     margin-right: 1em;
 }
 
-.prateleira.vitrine > ul {
+.prateleira.vitrine>ul {
     margin-left: 0px !important;
 }
 
+#underbannersMobile ul li {
+    width: 46%;
+    border: solid 2px #C8C8C8;
+    padding: 6px;
+    text-align: center;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 1em;
+    margin-right: 3px;
+    margin-left: 3px
+}
+
 @media screen and (max-width: 1700px) {
-
-    #home-content .owl-controls .owl-buttons > div.owl-prev {
-        margin-left: -4em;
+    #home-content .owl-controls .owl-buttons>div.owl-prev {
+        margin-left: 0px;
     }
-    #home-content .owl-controls .owl-buttons > div.owl-next {
-        margin-right: -4em;
+    #home-content .owl-controls .owl-buttons>div.owl-next {
+        margin-right: 0px;
     }
-
     .content {
         padding: 1.3em 0.3em;
     }
-
     .content a span {
         font-size: 15px;
     }
-
     .depto-nav .col-sm-2 {
         height: 185px;
     }
+}
 
-    
-  }
-
-  @media screen and (max-width: 450px) {
-
-
+@media screen and (max-width: 450px) {
     #home-content {
         padding-right: 15px !important;
         padding-left: 15px !important;
@@ -311,32 +322,49 @@
         left: 1%;
         width: 100%;
     }
-
-    #colection-dropdown li{
+    #colection-dropdown li {
         padding-top: 7%;
     }
-    
-.colection-description-box {
-    margin-bottom: 3em
-}
-#carouselmarcas .owl-next, #carouselmarcas .owl-prev {
-    display: none;
-}
-    .destaqueslist li{
+    .colection-description-box {
+        margin-bottom: 3em
+    }
+    #carouselmarcas .owl-next, #carouselmarcas .owl-prev {
+        display: none;
+    }
+    .destaqueslist li {
         display: block;
         margin-top: 2em;
         padding-right: 6em;
     }
-      }
+    .big-box img, .colection-description-box {
+        width: 100%;
+    }
+    #campanhas-ativas-cols .col-sm-6 {
+        margin-bottom: 15px;
+    }
+}
 
+@media screen and (min-width: 1200px) {
+    #campanhas-ativas-cols .col-sm-3 a img {
+        height: 273px;
+    }
+    .colection-item .col-sm-8 {
+        padding-right: 0px !important;
+    }
+    .mini-box {
+        margin: 18px 12px;
+    }
+}
 
+@media screen and (max-width: 376px) {
+    .mini-box {
+        width: 141px;
+        margin: 2px 2px;
+    }
+}
 
-
-      @media screen and (min-width: 1900px) {
-        .colection-description-box{
-            width: 100%
-        }
-      }
-
-
-      
+@media screen and (max-width: 500px) {
+    #propostas {
+        background-color: white !important;
+    }
+}

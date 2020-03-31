@@ -22,6 +22,7 @@
 }
 .prateleira .product-name {
     margin-bottom: 1em;
+    min-height: 108px !important;
 }
 
 .product-image::after {
@@ -90,7 +91,7 @@
 @media (min-width: 1700px) {
   
     .prateleira .buy-button-qtd .btn-add-buy-button-asynchronous {
-        width: 155px;
+        width: 150px;
     font-size: 19px
     }
     
@@ -109,4 +110,13 @@
         color: #444;
     }
     
+}
+
+@media (max-width: 700px) {
+    .prateleira .product-name {
+        min-height: 40px !important;
+    }
+    .prateleira .box-item {
+        height: 467px !important;
+    }
 }

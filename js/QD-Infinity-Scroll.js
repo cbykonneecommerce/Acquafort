@@ -31,7 +31,7 @@ if ("function" !== typeof (String.prototype.trim)) String.prototype.trim = funct
 			// Opção p/ definir a URL manualmente, ficando automático apenas a paginação. A url deve terminar com "...&PageNumber="
 			searchUrl: null,
 			// Objeto jQuery com o botão de voltar ao topo
-			returnToTop: $('<div id="returnToTop" class="qd-is-return-top"><a href="#"><span class="text">voltar ao</span><span class="text2">TOPO</span><span class="arrowToTop"></span></a></div>'),
+			returnToTop: $('<div id="returnToTop" class="qd-is-return-top"><a href="#"><span class="text">voltar ao topo</span><span class="arrowToTop"></span></a></div>'),
 			// Define em qual seletor a ação de observar a rolagem será aplicado (ex.: $(window).scroll(...))
 			scrollBy: document,
 			// Callback quando uma requisição ajax da prateleira é completada
@@ -42,7 +42,47 @@ if ("function" !== typeof (String.prototype.trim)) String.prototype.trim = funct
 			},
 			// Opção para fazer a paginação manualmente, uma nova página só é chamada quando executado o comando dentro desta função. Útil para ter um botão "Mostrar mais produtos"
 			// Ela recebe como parâmetro: 1 função que chama a próxima página (caso ela exista)
-			paginate: null,
+			paginate: function() {
+				$(".vitrine.resultItemsWrapper").append("<div class='carregar-prox-pg'>CARREGAR MAIS</div>");
+				$(".carregar-prox-pg").click(()=>{
+					if (!$public.currentStatus)
+					return;
+
+				var currentItems = $this.find(options.lastShelf);
+				if (currentItems.length < 1) {
+					log("Última Prateleira/Vitrine não encontrada \n (" + currentItems.selector + ")");
+					return false;
+				}
+
+				currentItems.after(elemLoading);
+				$public.currentStatus = false;
+				var requestedPage = $public.currentPage;
+				$.ajax({
+					url: $public.searchUrl.replace(/pagenumber\=[0-9]*/i, "PageNumber=" + $public.currentPage),
+					dataType: "html",
+					success: function (data) {
+						if (data.trim().length < 1) {
+							$public.moreResults = false;
+							log("Não existem mais resultados a partir da página: " + requestedPage, "Aviso");
+							$(window).trigger("QuatroDigital.is_noMoreResults");
+						}
+						else
+							options.insertContent(currentItems, data);
+						$public.currentStatus = true;
+						elemLoading.remove();
+					},
+					error: function () {
+						log("Houve um erro na requisição Ajax de uma nova página.");
+					},
+					complete: function (jqXHR, textStatus) {
+						options.callback();
+
+						$(window).trigger("QuatroDigital.is_Callback", [jqXHR, textStatus]);
+					}
+				});
+				$public.currentPage++;
+				})
+			},
 			// Esta função é quem controla onde o conteúdo será inserido. Ela recebe como parâmetro: O ùltimo bloco inserido e os dados da nova requisição AJAX
 			insertContent: function (currentItems, ajaxData) {
 				currentItems.after(ajaxData);

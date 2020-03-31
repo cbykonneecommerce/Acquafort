@@ -170,6 +170,17 @@
         margin-left: 4em;
     }
 }
+
+
+@media screen and (max-width: 350px)  {
+    #newsform #emailform {
+        width: 17em;
+    }
+
+    #newsform #commit {
+        margin-left: -1em;
+    }
+}
     
 
 

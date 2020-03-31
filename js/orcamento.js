@@ -148,6 +148,15 @@ $(this).val(tel);
 
 //FIM MASCARAS
 
+setInterval(() => {
+    if($("#getFile").val()) {
+        $("#getFile").show()
+    }
+}, 1000);
+
+
+
+
 $(".onlycompanies").hide();
 $("#gridCheck").change(function() {
     if ( $(this).is(':checked') ) {
