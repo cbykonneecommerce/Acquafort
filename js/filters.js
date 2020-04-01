@@ -16,7 +16,7 @@ switch (me) {
     me = "tipo-de-gas"
     break;
   default:
-    console.log('Sorry, we are out of ' + expr + '.');
+    console.log('nada');
 }
         $("img", this).attr("src","/arquivos/fat-arrow-up.png")
         $(`#admake-advanced-filter > .box-filtro.filtro-${me} .opcoes`).slideDown();
