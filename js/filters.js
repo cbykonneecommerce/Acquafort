@@ -15,6 +15,9 @@ switch (me) {
   case 'tipo de gás':
     me = "tipo-de-gas"
     break;
+    case 'aplicação':
+            me = "aplicacao"
+            break;
   default:
     console.log('nada');
 }
@@ -22,6 +25,21 @@ switch (me) {
         $(`#admake-advanced-filter > .box-filtro.filtro-${me} .opcoes`).slideDown();
     }, function() {
         let me = $(this).text().toLowerCase();
+
+
+        switch (me) {
+          case 'pressão indicada':
+            me = "pressao-indicada"
+            break;
+          case 'tipo de gás':
+            me = "tipo-de-gas"
+            break;
+            case 'aplicação':
+            me = "aplicacao"
+            break;
+          default:
+            console.log('nada');
+        }
         $("img", this).attr("src","/arquivos/fat-arrow-down.png")
         $(`#admake-advanced-filter > .box-filtro.filtro-${me} .opcoes`).slideUp();
     })
