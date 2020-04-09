@@ -117,7 +117,7 @@
 
 .mini-box {
     border-style: solid;
-    border-color: #C8C8C8;
+    border-color: rgb(245, 245, 245);
     border-width: thin;
     border-radius: 10px;
     text-align: center;
@@ -224,18 +224,22 @@
 
 .section-title {
     margin-bottom: 1em;
+    margin-left: 12px;
 }
 
+#colecoes h3, .sided {
+    margin-left: 12px;
+}
 .marca-nav, .destaques-display, #colecoes, #preco-baixo {
     margin-top: 2em;
 }
 
 #home-content .owl-controls .owl-buttons>div.owl-prev {
-    margin-left: -7em;
+    margin-left: -4%;
 }
 
 #home-content .owl-controls .owl-buttons>div.owl-next {
-    margin-right: -7em;
+    margin-right: -4%;
 }
 
 #depoimentos {
@@ -291,12 +295,27 @@
     margin-left: 3px
 }
 
+.destaqueslist li {
+    margin-left: 5em;
+    background-color: rgb(245, 245, 245);
+    margin-bottom: -12px;
+    padding: 12px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#home-content .owl-controls .owl-buttons>div.owl-prev {
+    margin-left: -17%;
+}
+#home-content .owl-controls .owl-buttons>div.owl-next {
+    margin-right: -17%;
+}
+
 @media screen and (max-width: 1700px) {
     #home-content .owl-controls .owl-buttons>div.owl-prev {
-        margin-left: 0px;
+        margin-left: -3%;
     }
     #home-content .owl-controls .owl-buttons>div.owl-next {
-        margin-right: 0px;
+        margin-right: -3%;
     }
     .content {
         padding: 1.3em 0.3em;
@@ -331,11 +350,7 @@
     #carouselmarcas .owl-next, #carouselmarcas .owl-prev {
         display: none;
     }
-    .destaqueslist li {
-        display: block;
-        margin-top: 2em;
-        padding-right: 6em;
-    }
+    
     .big-box img, .colection-description-box {
         width: 100%;
     }
@@ -354,6 +369,14 @@
     .mini-box {
         margin: 18px 12px;
     }
+
+    #home-content .owl-controls .owl-buttons>div.owl-prev {
+        margin-left: -4%;
+    }
+    
+    #home-content .owl-controls .owl-buttons>div.owl-next {
+        margin-right: -4%;
+    }
 }
 
 @media screen and (max-width: 376px) {
@@ -368,3 +391,50 @@
         background-color: white !important;
     }
 }
+
+
+
+@media screen and (min-width: 700px) {
+    .destaqueslist {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+}
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .menu-container {
+        overflow-x:auto;
+    }
+
+    .destaqueslist {
+        display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    }
+
+    .destaqueslist li {
+        display: block;
+        margin-top: 2em;
+        margin-left: 2em !important;
+    }
+
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 3px;
+        height:5px
+      }
+      ::-webkit-scrollbar-thumb {
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, .5);
+      }
+
+}
+
+
+
+
+

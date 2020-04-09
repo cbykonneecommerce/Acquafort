@@ -19,6 +19,11 @@ $(document).ready(function() {
         $('.product-details .price-box .descricao-preco .valor-por').prepend('<div style="margin-bottom:10px"><img src="/arquivos/avista.png" id="avista" style="width:28px;margin-top:-15px" /><p style="color:#A7A7A7; display:inline; font-size:16px"> Pague à vista</p></div>');
         $('.product-info .shipping-box label').prepend('<img src="/arquivos/truck2.png" id="minitruck" />');
         $(".product-info .shipping-box .freight-btn").val("Calcular");
+        $(".valor-dividido.price-installments").prepend(`<div style="margin-bottom:10px"><img src="/arquivos/cartaoproduto.png" id="avista" style="width:28px;margin-top: -9px;" /><p style="color:#A7A7A7; display:inline; font-size:16px"> Pague parcelado</p></div>`);
+
+       if($(".sku-selector-container").html() == "") {
+           $(".sku-selector-container").css({"border-left": "none"})
+       }
     }, 500);
 
    // if(skuJson.skus.length  == 1) {

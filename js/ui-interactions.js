@@ -1,47 +1,94 @@
 // Controle para destaques em departamento
 
+$(".destaques-shelf#aquecedores").show();
+$(".destaques-shelf#iluminacao").show();
+
 $(".destaqueslist #aquecedores").click(() => {
     $(".destaques-shelf").hide();
+    $(".destaqueslist li span").css({"color": "#333"})
+    $(".destaqueslist li .select-triangle").css({"display": "none"})
     $(".destaques-shelf#aquecedores").show()
+    
+    $(".destaqueslist #aquecedores span").css({"color": "#38B7F8"})
+    $(".destaqueslist #aquecedores .select-triangle").css({"display": "block"})
 })
 
 $(".destaqueslist #ventiladores").click(() => {
     $(".destaques-shelf").hide();
+    $(".destaqueslist li span").css({"color": "#333"})
+    $(".destaqueslist li .select-triangle").css({"display": "none"})
     $(".destaques-shelf#ventiladores").show()
+    $(".destaqueslist #ventiladores span").css({"color": "#38B7F8"})
+    $(".destaqueslist #ventiladores .select-triangle").css({"display": "block"})
 })
 
 $(".destaqueslist #duchas").click(() => {
     $(".destaques-shelf").hide();
+    $(".destaqueslist li span").css({"color": "#333"})
+    $(".destaqueslist li .select-triangle").css({"display": "none"})
     $(".destaques-shelf#duchas").show()
+
+    $(".destaqueslist #duchas span").css({"color": "#38B7F8"})
+    $(".destaqueslist #duchas .select-triangle").css({"display": "block"})
 })
 $(".destaqueslist #loucas").click(() => {
     $(".destaques-shelf").hide();
+    $(".destaqueslist li span").css({"color": "#333"})
+    $(".destaqueslist li .select-triangle").css({"display": "none"})
     $(".destaques-shelf#loucas").show()
+
+    $(".destaqueslist #loucas span").css({"color": "#38B7F8"})
+    $(".destaqueslist #loucas .select-triangle").css({"display": "block"})
 })
 
 $(".destaqueslist #tintas").click(() => {
     $(".destaques-shelf").hide();
+    $(".destaqueslist li span").css({"color": "#333"})
+    $(".destaqueslist li .select-triangle").css({"display": "none"})
     $(".destaques-shelf#tintas").show()
+
+    $(".destaqueslist #tintas span").css({"color": "#38B7F8"})
+    $(".destaqueslist #tintas .select-triangle").css({"display": "block"})
 })
 
 $(".destaqueslist #iluminacao").click(() => {
     $(".destaques-shelf").hide();
+    $(".destaqueslist li span").css({"color": "#333"})
+    $(".destaqueslist li .select-triangle").css({"display": "none"})
     $(".destaques-shelf#iluminacao").show()
+
+    $(".destaqueslist #iluminacao span").css({"color": "#38B7F8"})
+    $(".destaqueslist #iluminacao .select-triangle").css({"display": "block"})
 })
 
 $(".destaqueslist #Medidores").click(() => {
     $(".destaques-shelf").hide();
+    $(".destaqueslist li span").css({"color": "#333"})
+    $(".destaqueslist li .select-triangle").css({"display": "none"})
     $(".destaques-shelf#Medidores").show()
+
+    $(".destaqueslist #Medidores span").css({"color": "#38B7F8"})
+    $(".destaqueslist #Medidores .select-triangle").css({"display": "block"})
 })
 
 $(".destaqueslist #placas").click(() => {
     $(".destaques-shelf").hide();
+    $(".destaqueslist li span").css({"color": "#333"})
+    $(".destaqueslist li .select-triangle").css({"display": "none"})
     $(".destaques-shelf#placas").show()
+
+    $(".destaqueslist #placas span").css({"color": "#38B7F8"})
+    $(".destaqueslist #placas .select-triangle").css({"display": "block"})
 })
 
 $(".destaqueslist #Prevencao").click(() => {
     $(".destaques-shelf").hide();
+    $(".destaqueslist li span").css({"color": "#333"})
+    $(".destaqueslist li .select-triangle").css({"display": "none"})
     $(".destaques-shelf#Prevencao").show()
+
+    $(".destaqueslist #Prevencao span").css({"color": "#38B7F8"})
+    $(".destaqueslist #Prevencao .select-triangle").css({"display": "block"})
 })
 
 

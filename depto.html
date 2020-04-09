@@ -35,6 +35,12 @@
          <section class="container-fluid" id="depto-banner" style="padding-left: 0; padding-right: 0;">
             <vtex:contentPlaceHolder id="Banner-Principal" />
          </section>
+
+         <div id="sidenavCTR" style="position: fixed;top: 50%;z-index: 99;background: #b3b3b3;
+         opacity: .8;">
+             <a  onclick="openNav()" id="open"><img src="/arquivos/seta02.png"/></a>
+             <a  onclick="closeNav()" id="close"><img src="/arquivos/seta01.png"/></a>
+         </div>
  
          <section id="content" class="container">
  
@@ -51,23 +57,33 @@
              <div id="departament-extra-middle"></div>
  
              <div class="row">
+
+                <aside class="col-xs-3 col-sm-3  sidebar" id="mySidenav" style="background-color: #fff;">
+                    <h2>Defina <span style="font-weight: bold; color:#2F6CA7">Seus Filtros</span></h2>
+                    <hr/>
+                    <div id="departament-navegador">
+                        <!--  Controle: navegador de departamento -->
+                        <vtex.cmc:singleDepartmentNavigator keepCurrentPath="true" />
+                        <!-- /Controle: navegador de departamento -->
+                    
+                        <div id="departament-extra-menu"></div>
+                    </div><!-- #departament-navegador -->          	
+                </aside><!-- .sidebar -->
  
-                 <aside class="col-xs-12 col-sm-3 hidden-sm sidebar">
+               <!--  <aside class="col-xs-12 col-sm-3 hidden-sm sidebar">
                      <h2>Defina <span style="font-weight: bold; color:#2F6CA7">Seus Filtros</span></h2>
                     <hr/>
 
                     <vtex.cmc:singleDepartmentNavigator keepCurrentPath="true" />
- <!--<vtex.cmc:searchNavigator/> -->
+ 
 
                     
                      <div id="departament-navegador">
-                         <!--  Controle: navegador de departamento -->
-                         <!--<vtex.cmc:singleDepartmentNavigator />-->
-                         <!-- /Controle: navegador de departamento -->
+                   
                      
                          <div id="departament-extra-menu"></div>
-                     </div><!-- #departament-navegador -->          	
-                 </aside><!-- .sidebar -->
+                     </div>        	
+                 </aside>--><!-- .sidebar -->
         
                  <article id="main-content" class="col-xs-12 col-md-9">
                     <div class="filtros-ativos">
@@ -146,4 +162,23 @@
 }, 1000)*/
 
      </script>
+
+<script>
+
+    $("#sidenavCTR #close").hide();
+
+    function openNav() {
+        document.getElementById("mySidenav").style.left = "0px";
+        document.getElementById("sidenavCTR").style.left = "64%";
+        $("#sidenavCTR #open").hide();
+        $("#sidenavCTR #close").show();
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.left = "-880px";
+        document.getElementById("sidenavCTR").style.left = "0%";
+        $("#sidenavCTR #close").hide();
+        $("#sidenavCTR #open").show();
+    }
+</script>
  </html>
