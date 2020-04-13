@@ -27,6 +27,21 @@ $("#carouselmarcas").owlCarousel({
 
 });
 
+$("#carouseldeptos").owlCarousel({
+ 
+    autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+    items : 5,
+    itemsDesktop : [1199,5],
+    itemsMobile : [479,2],
+    navigation: true,
+    stopOnHover: true
+
+});
+
+
+
+
 
 $("#carouselpropostas").owlCarousel({
  

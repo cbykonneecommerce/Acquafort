@@ -50,8 +50,16 @@ switch (me) {
           $(".filtros-ativos").append(`<div class="filter-pill">${texto}</div>`)
       }
   
+      const titles= $( ".menu-departamento h4" )
+      const lists = $( ".menu-departamento h4" ).next()
 
+      let subnav = ''
+      for(let i = 0; i < titles.length; i++) {
+        subnav += `${$(titles[i]).html()} <ul> ${$(lists[i]).html()} </ul>`
+      }
 
+      subnav = `<div id="subnavigator"> ${subnav}</div>`
+      $("#mySidenav #departament-navegador").prepend(subnav)
 
 }, 1000)
 

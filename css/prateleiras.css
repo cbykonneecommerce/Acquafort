@@ -117,9 +117,17 @@
         min-height: 40px !important;
     }
     .prateleira .box-item {
-        height: 467px !important;
+        height: 412px !important
     }
     .prateleira .product-image img {
         max-width: 75%;
+    }
+    .buy-button-qtd {
+        visibility: visible !important;
+
+    }
+
+    #home-content .owl-controls .owl-buttons>div.owl-prev img,  #home-content .owl-controls .owl-buttons>div.owl-next img {
+        max-width: 50% !important;
     }
 }

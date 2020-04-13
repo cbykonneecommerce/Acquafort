@@ -58,6 +58,34 @@ hr {
     border: none;
 }
 
+
+#subnavigator {
+    border: solid 2px #BDBDBD;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#subnavigator a {
+    color: #4F4F4F !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    line-height: 30px !important;
+    text-decoration: none;
+}
+
+#subnavigator ul li {
+    padding-left: 2em;
+    margin-bottom: 10px;
+}
+
+#subnavigator ul li a {
+    padding-left: 2em;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #5062C2 !important;
+}
+
 .fa-square-o {
     color: #D5D5D5;
     padding: 2px;
@@ -148,3 +176,11 @@ hr {
         background-color: white;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .prateleira.vitrine > ul > li {
+        float: left;
+        width: 50% !important;
+    }
+}
+
