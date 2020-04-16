@@ -60,7 +60,7 @@ hr {
 
 
 #subnavigator {
-    border: solid 2px #BDBDBD;
+    border: solid 1px #BDBDBD;
     border-radius: 15px;
     padding: 15px;
 }
@@ -79,7 +79,6 @@ hr {
 }
 
 #subnavigator ul li a {
-    padding-left: 2em;
     margin-bottom: 10px;
     font-weight: 600;
     text-decoration: none;

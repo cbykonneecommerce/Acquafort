@@ -4,7 +4,7 @@ $(".destaques-shelf#aquecedores").show();
 $(".destaques-shelf#iluminacao").show();
 
 $(".destaqueslist #aquecedores").click(() => {
-    $(".destaques-shelf").hide();
+    $(".destaques-shelf.firstlist").hide();
     $(".destaqueslist li span").css({"color": "#333"})
     $(".destaqueslist li .select-triangle").css({"display": "none"})
     $(".destaques-shelf#aquecedores").show()
@@ -14,7 +14,7 @@ $(".destaqueslist #aquecedores").click(() => {
 })
 
 $(".destaqueslist #ventiladores").click(() => {
-    $(".destaques-shelf").hide();
+    $(".destaques-shelf.firstlist").hide();
     $(".destaqueslist li span").css({"color": "#333"})
     $(".destaqueslist li .select-triangle").css({"display": "none"})
     $(".destaques-shelf#ventiladores").show()
@@ -23,7 +23,7 @@ $(".destaqueslist #ventiladores").click(() => {
 })
 
 $(".destaqueslist #duchas").click(() => {
-    $(".destaques-shelf").hide();
+    $(".destaques-shelf.firstlist").hide();
     $(".destaqueslist li span").css({"color": "#333"})
     $(".destaqueslist li .select-triangle").css({"display": "none"})
     $(".destaques-shelf#duchas").show()
@@ -32,7 +32,7 @@ $(".destaqueslist #duchas").click(() => {
     $(".destaqueslist #duchas .select-triangle").css({"display": "block"})
 })
 $(".destaqueslist #loucas").click(() => {
-    $(".destaques-shelf").hide();
+    $(".destaques-shelf.firstlist").hide();
     $(".destaqueslist li span").css({"color": "#333"})
     $(".destaqueslist li .select-triangle").css({"display": "none"})
     $(".destaques-shelf#loucas").show()
@@ -42,7 +42,7 @@ $(".destaqueslist #loucas").click(() => {
 })
 
 $(".destaqueslist #tintas").click(() => {
-    $(".destaques-shelf").hide();
+    $(".destaques-shelf.firstlist").hide();
     $(".destaqueslist li span").css({"color": "#333"})
     $(".destaqueslist li .select-triangle").css({"display": "none"})
     $(".destaques-shelf#tintas").show()
@@ -52,7 +52,7 @@ $(".destaqueslist #tintas").click(() => {
 })
 
 $(".destaqueslist #iluminacao").click(() => {
-    $(".destaques-shelf").hide();
+    $(".destaques-shelf.lastlist").hide();
     $(".destaqueslist li span").css({"color": "#333"})
     $(".destaqueslist li .select-triangle").css({"display": "none"})
     $(".destaques-shelf#iluminacao").show()
@@ -62,7 +62,7 @@ $(".destaqueslist #iluminacao").click(() => {
 })
 
 $(".destaqueslist #Medidores").click(() => {
-    $(".destaques-shelf").hide();
+    $(".destaques-shelf.lastlist").hide();
     $(".destaqueslist li span").css({"color": "#333"})
     $(".destaqueslist li .select-triangle").css({"display": "none"})
     $(".destaques-shelf#Medidores").show()
@@ -72,7 +72,7 @@ $(".destaqueslist #Medidores").click(() => {
 })
 
 $(".destaqueslist #placas").click(() => {
-    $(".destaques-shelf").hide();
+    $(".destaques-shelf.lastlist").hide();
     $(".destaqueslist li span").css({"color": "#333"})
     $(".destaqueslist li .select-triangle").css({"display": "none"})
     $(".destaques-shelf#placas").show()
@@ -82,7 +82,7 @@ $(".destaqueslist #placas").click(() => {
 })
 
 $(".destaqueslist #Prevencao").click(() => {
-    $(".destaques-shelf").hide();
+    $(".destaques-shelf.lastlist").hide();
     $(".destaqueslist li span").css({"color": "#333"})
     $(".destaqueslist li .select-triangle").css({"display": "none"})
     $(".destaques-shelf#Prevencao").show()

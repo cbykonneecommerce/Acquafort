@@ -280,7 +280,10 @@ font-family: Arial !important;
     font-weight: bold;
 }
 
+#omnichat-web-chat {
+    z-index: 99999999999999999999999999999999 !important;
 
+}
 
 .deptonav#todas .row .col-sm-2 {
     width: 19% !important;

@@ -130,4 +130,11 @@
     #home-content .owl-controls .owl-buttons>div.owl-prev img,  #home-content .owl-controls .owl-buttons>div.owl-next img {
         max-width: 50% !important;
     }
+
+    .prateleira .product-name a {
+        font-size: 18px !important;
+    }
+    .prateleira .price .best-price {
+        font-size: 23px !important;
+    }
 }

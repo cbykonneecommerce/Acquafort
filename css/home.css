@@ -50,6 +50,7 @@
     border-color: #C8C8C8;
     border-width: thin;
     border-radius: 0px 0px 10px 10px;
+    margin-left: -3px;
 }
 
 .destaqueslist {
@@ -166,6 +167,7 @@
     border-bottom-color: transparent;
     border-width: thin;
     border-radius: 10px 10px 0px 0px;
+    margin-left: -3px;
 }
 
 .depto-nav #nav-grid .content a img, .depto-nav #bottomrow .content a img {
@@ -299,6 +301,7 @@ font-weight: bold;
     display: block;
     background: #1F4273;
     opacity: 0.9;
+    border-radius: 10px;
 }
 
 
@@ -328,7 +331,8 @@ font-weight: bold;
 }
 
 .destaqueslist li {
-    margin-left: 5em;
+    margin-left: 3em;
+    margin-right: 3em;
     background-color: rgb(245, 245, 245);
     margin-bottom: -12px;
     padding: 12px;
@@ -349,6 +353,12 @@ font-weight: bold;
     #home-content .owl-controls .owl-buttons>div.owl-next {
         margin-right: -3%;
     }
+
+    .preco-baixo {
+        margin-right: 0px;
+    margin-left: 0px;
+}
+    
     .content {
         padding: 1.3em 0.3em;
     }
@@ -422,6 +432,15 @@ font-weight: bold;
     #propostas {
         background-color: white !important;
     }
+
+ /*   .destaques-shelf  .owl-carousel .owl-item {
+        width: 190px !important;
+    }
+
+    .preco-baixo  .owl-carousel .owl-item {
+        width: 190px !important;
+    }*/
+   
 }
 
 
