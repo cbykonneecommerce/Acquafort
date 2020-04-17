@@ -170,6 +170,15 @@
     margin-left: -3px;
 }
 
+.depto-nav #nav-grid .col-sm-2:hover, .depto-nav #bottomrow .col-sm-2:hover{
+    background-color: #1F4273;
+    transition: 0.3s;
+}
+
+.depto-nav #nav-grid .col-sm-2:hover .content a span, .depto-nav #bottomrow .col-sm-2:hover .content a span {
+    color: white
+}
+
 .depto-nav #nav-grid .content a img, .depto-nav #bottomrow .content a img {
     display: block;
     max-width: 70%;
@@ -339,6 +348,11 @@ font-weight: bold;
     border-radius: 15px 15px 0px 0px;
 }
 
+
+.lastbanner .box-banner a img {
+    height: auto;
+}
+
 #home-content .owl-controls .owl-buttons>div.owl-prev {
     margin-left: -17%;
 }
@@ -413,11 +427,11 @@ font-weight: bold;
     }
 
     #home-content .owl-controls .owl-buttons>div.owl-prev {
-        margin-left: -4%;
+        margin-left: -6%;
     }
     
     #home-content .owl-controls .owl-buttons>div.owl-next {
-        margin-right: -4%;
+        margin-right: -6%;
     }
 }
 

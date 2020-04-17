@@ -35,3 +35,33 @@ $("#env").hover(()=>{
 ()=>{
     $("#env").attr("src","/arquivos/envelope-pol.png");
 })
+
+
+
+
+
+$(".depto-nav #nav-grid .col-sm-2").hover(function () {
+    
+    const currentImg = $(".content a img",this).attr("src").split('.')[0];
+    
+    $(".content a img",this).attr("src",`${currentImg}_branco.png`);
+}, 
+function () {
+
+    const currentImg = $(".content a img",this).attr("src").split('_branco')[0];
+    $(".content a img",this).attr("src",`${currentImg}.png`);
+})
+
+
+
+$(".depto-nav #bottomrow .col-sm-2").hover(function () {
+    
+    const currentImg = $(".content a img",this).attr("src").split('.')[0];
+    
+    $(".content a img",this).attr("src",`${currentImg}_branco.png`);
+}, 
+function () {
+
+    const currentImg = $(".content a img",this).attr("src").split('_branco')[0];
+    $(".content a img",this).attr("src",`${currentImg}.png`);
+})
