@@ -114,7 +114,7 @@
 
 @media (max-width: 700px) {
     .prateleira .product-name {
-        min-height: 40px !important;
+        min-height: 130px !important;
     }
     .prateleira .box-item {
         height: 348px !important
@@ -135,6 +135,6 @@
         font-size: 18px !important;
     }
     .prateleira .price .best-price {
-        font-size: 23px !important;
+        font-size: 21px !important;
     }
 }

@@ -112,7 +112,7 @@
 }
 
 .big-box img {
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px;
     width: 92%;
 }
 
@@ -227,6 +227,7 @@
     padding-top: 1.3em;
     font-size: 1.2em;
     padding-bottom: 1em;
+    min-height: 73px;
 }
 
 .destaques-display .row {
@@ -508,6 +509,25 @@ font-weight: bold;
       .content {
           text-align: center !important;
       }
+
+
+
+
+      #carouseldeptos .owl-controls .owl-buttons>div.owl-prev img, #carouseldeptos .owl-controls .owl-buttons>div.owl-next img {
+        max-width: 39% !important
+      }
+
+      #carouseldeptos .owl-controls .owl-buttons>div.owl-next {
+        margin-right: -8.5%;
+      }
+
+      #carouseldeptos .owl-controls .owl-buttons>div.owl-prev {
+        margin-left: -8.5%;
+      }
+
+      .prateleira .product-name {
+        min-height: 80px !important;
+    }
 
 }
 

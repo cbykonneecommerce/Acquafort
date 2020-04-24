@@ -29,11 +29,22 @@ hr {
 
 .vitrine.resultItemsWrapper {
     text-align: center;
+    
+}
+
+.resultado-busca-filtro > fieldset {
+    margin-bottom: 1em;
 }
 .resultado-busca-filtro > fieldset select {
     border-radius: 20px !important;
     border: 1px solid #808080 !important;
-
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    padding-top: 1px;
+    padding-left: 8px;
+    margin-bottom: 0em;
+    padding-right: 8px;
 }
 
 .orderBy label {
@@ -173,6 +184,11 @@ hr {
         transition: 0.5s;
         padding-top: 60px;
         background-color: white;
+    }
+
+    #sidenavCTR #open img, #sidenavCTR #close img {
+        width: 88%;
+        margin-right: -15px;
     }
 }
 

@@ -303,6 +303,10 @@ font-family: Arial !important;
         border-radius: 26px;
         width: 18%;
     }
+
+    .vtexIdUI {
+        margin-top: 178px;
+    }
     .ui-autocomplete {
         width: 320px ! important
     }
